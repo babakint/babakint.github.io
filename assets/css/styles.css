@@ -82,7 +82,7 @@ h4{
 .photo{
     width: 500px;
     height: 500px;
-    background-image: url("https://cdn.dribbble.com/users/1976516/screenshots/14379910/dribgif_4x.gif?compress=1&resize=400x300");
+    background-image: <img src="assets/images/babak-ehteshami-bejnordi-photo.jpg" alt="photo01">;
     border-radius: 50%;
     background-position: center;
     background-size: cover;
