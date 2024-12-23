@@ -187,7 +187,7 @@ main, .experience, .education, .education_c, .experience_c, .skills{
 /* General Button Styling */
 .social-button,
 .cv-button {
-  display: inline-flex; /* Use flexbox for alignment */
+  display: flex; /* Use flexbox for alignment */
   align-items: center; /* Vertically center content */
   justify-content: center; /* Horizontally center content */
   height: 40px; /* Set fixed height */
@@ -205,7 +205,7 @@ main, .experience, .education, .education_c, .experience_c, .skills{
 }
 
 .cv-button {
-  background-color: #000000; /* Black for CV button */
+  background-color: #7DA557; /* Black for CV button */
   color: white;
 }
 
