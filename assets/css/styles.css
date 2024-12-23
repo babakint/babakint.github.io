@@ -180,6 +180,10 @@ main, .experience, .education, .education_c, .experience_c, .skills{
   margin-top: 20px; /* Add space above the button group */
 }
 
+.button-group a {
+  display: inline-block; /* Ensure each button behaves like a block element */
+}
+
 /* General Button Styling */
 .social-button,
 .cv-button {
