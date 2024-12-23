@@ -195,15 +195,9 @@ main, .experience, .education, .education_c, .experience_c, .skills{
   text-align: center;
 }
 
-/* Individual Button Colors */
-.linkedin {
-  background-color: #0077b5; /* LinkedIn blue */
-  color: white;
-}
-
-.twitter {
-  background-color: #1da1f2; /* Twitter blue */
-  color: white;
+.social-button img.icon {
+  width: 20px; /* Adjust size of the icon */
+  height: auto; /* Maintain aspect ratio */
 }
 
 .scholar {
