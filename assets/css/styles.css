@@ -23,12 +23,12 @@ body.dark-mode {
 /* Button Styling */
 #theme-toggle {
   position: fixed;
-  top: 20px;
+  bottom: 20px;
   right: 20px;
   padding: 10px 20px;
   cursor: pointer;
   background-color: #000000;
-  color: #ffffff;
+  color: none;  /* #ffffff; */
   border: none;
   border-radius: 5px;
 }
