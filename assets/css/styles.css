@@ -102,7 +102,7 @@ h4{
 
 /* Resume section */
 
-main, .experience, .education, .skills{
+main, .experience, .education, .education_c, .experience_c, .skills{
     border-bottom: #c7c7c7 1px solid;
 }
 
