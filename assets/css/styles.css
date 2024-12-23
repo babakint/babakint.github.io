@@ -35,6 +35,7 @@ body.dark-mode {
 
 #theme-toggle:hover {
   background-color: #333333;
+  opacity: 0.8;
 }
 
 /* Header */
