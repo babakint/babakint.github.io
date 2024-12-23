@@ -191,7 +191,7 @@ main, .experience, .education, .education_c, .experience_c, .skills{
   align-items: center; /* Vertically center content */
   justify-content: center; /* Horizontally center content */
   height: 40px; /* Set fixed height */
-  padding: 0 20px; /* Add horizontal padding for buttons with text */
+  /* padding: 0 20px;  Add horizontal padding for buttons with text */
   border-radius: 5px; /* Optional: Rounded corners for buttons */
   text-decoration: none; /* Remove underline from links */
   font-size: 16px; /* Font size for text buttons */
