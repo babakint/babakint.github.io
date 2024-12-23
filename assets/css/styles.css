@@ -30,7 +30,7 @@ body.dark-mode {
   right: 20px; /* Distance from the right side of the page */
   padding: 10px 20px;
   background-color: #000000;
-  background: none; /* No background color */
+  background: #000000; /* No background color */
   border: none;
   border-radius: 5px;
   cursor: pointer;
