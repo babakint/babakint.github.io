@@ -1,0 +1,338 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Header */
+
+header, .resume h2{
+    margin-bottom: 100px;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    font-size: 22px;
+}
+
+header{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div p{
+    display: inline;
+}
+
+/* Navigation */
+
+nav a{
+    padding-left: 20px;
+}
+
+nav a:nth-child(-n+2){
+    padding-right: 20px;
+    border-right: #000 1px solid;
+}
+
+/* Main */
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom:  50px;
+}
+
+p, li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 22px;
+    display: inline;
+}
+
+h2{
+    font-size: 42px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.photo{
+    width: 500px;
+    height: 500px;
+    background-image: url("https://cdn.dribbble.com/users/1976516/screenshots/14379910/dribgif_4x.gif?compress=1&resize=400x300");
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.heading{
+    margin: 0 auto;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 100px;
+}
+
+.heading div:last-child{
+    width: 50%;
+}
+
+/* Resume section */
+
+main, .experience, .education, .skills{
+    border-bottom: #c7c7c7 1px solid;
+}
+
+.heading, .experience, .information, .education, .education-column, .skills, .projects-list, footer{
+    display: flex;
+}
+
+.experience, .education, .skills{
+    padding: 50px 30px;
+}
+
+.experience, .information, .education, .skills{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.information{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    width: 300px;
+}
+
+.education-column{
+    flex-direction: column;
+}
+
+/* Icon fonts */
+
+[class^="icon-"]{
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+}
+
+[class^="icon-github-square"]{
+    font-size: 47px;
+    position: relative;
+    bottom: 3px;
+}
+
+.icon-download:hover{
+    color: rgb(195, 6, 6);
+}
+
+[class^="icon-download"]{
+    
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+}
+
+/* Projects section */
+
+.projects{
+    padding-top: 50px;
+}
+
+.projects-list{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.funiro{
+    background-image: url(../images/funiro.png);
+}
+
+.bislite{
+    background-image: url(../images/bislite-free-html5-templates.jpg);
+}
+
+.adaptive_page{
+    background-image: url(../images/adaptive_page.jpg);
+}
+
+.projects-list a{
+    width: 500px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.projects-list a:hover{
+    transform: scale(1.1);
+}
+
+a span{
+    display: block;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #2e2e2e;
+    border-radius: 0 0 15px 15px;
+    background: rgb(50, 50, 50);
+    background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(123,123,122,1) 42%, rgb(182, 182, 182) 100%);
+}
+
+/* Footer */
+
+footer{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100px;
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px;
+    align-content: space-between;
+    align-items: center;
+}
+
+footer div{
+    width: 350px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+footer p{
+    width: 180px;
+    text-align: center;
+}
+
+@media screen and (max-width: 1024px){
+    .photo{
+        width: 350px;
+        height: 350px;
+    }
+    footer div{
+        width: 250px;
+    }
+}
+
+
+@media screen and (max-width: 460px) {
+
+    /* Header */
+
+    header{
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    h1{
+        display: block;
+    }
+
+    header div{
+        margin-bottom: 15px;
+    }
+
+    /* Navigatiom */
+
+    nav a{
+        font-size: 14px;
+    }
+
+    /* Maim */
+
+    .photo{
+        margin-bottom: 30px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .heading{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .heading div:last-child{
+        width: 300px;
+        text-align: center;
+    }
+
+    .heading div h2{
+        font-size: 30px;
+    }
+
+    /* Resume */
+
+    .resume h2{
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .icon-download{
+        font-size: 15px;
+    }
+
+    .experience, .education, .skills{
+        display: none;
+    }
+
+    .resume{
+        padding-bottom: 30px;
+        border-bottom: #c7c7c7 1px solid;
+    }
+
+    /* Projects */
+
+    .projects h2{
+        text-align: center;
+    }
+
+    .projects-list a{
+        width: 300px;
+        height: 204px;
+    }
+
+    a span{
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+    /* Footer */
+
+    footer{
+        height: fit-content;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    footer div{
+        margin: 20px 0;
+    }
+}
