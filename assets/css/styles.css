@@ -172,6 +172,64 @@ main, .experience, .education, .education_c, .experience_c, .skills{
     flex-direction: column;
 }
 
+/* Grouping Buttons */
+.button-group {
+  display: flex; /* Arrange buttons in a row */
+  justify-content: center; /* Center align the buttons */
+  gap: 15px; /* Add spacing between buttons */
+  margin-top: 20px; /* Add space above the button group */
+}
+
+/* General Button Styling */
+.social-button,
+.cv-button {
+  text-decoration: none; /* Remove underline from links */
+  padding: 10px 20px; /* Add padding inside the buttons */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px; /* Font size for button text */
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+/* Individual Button Colors */
+.linkedin {
+  background-color: #0077b5; /* LinkedIn blue */
+  color: white;
+}
+
+.twitter {
+  background-color: #1da1f2; /* Twitter blue */
+  color: white;
+}
+
+.scholar {
+  background-color: #4285f4; /* Google Scholar blue */
+  color: white;
+}
+
+.email {
+  background-color: #6c757d; /* Neutral gray for email */
+  color: white;
+}
+
+.cv-button {
+  background-color: #000000; /* Black for CV button */
+  color: white;
+}
+
+/* Hover Effects for All Buttons */
+.social-button:hover,
+.cv-button:hover {
+  opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Optional Styling for CV Button (Custom Appearance) */
+.cv-button {
+  border: none;
+  font-weight: bold;
+}
+
+
 /* Icon fonts */
 
 [class^="icon-"]{
