@@ -196,13 +196,8 @@ main, .experience, .education, .education_c, .experience_c, .skills{
 }
 
 .social-button img.icon {
-  width: 20px; /* Adjust size of the icon */
-  height: auto; /* Maintain aspect ratio */
-}
-
-.email {
-  background-color: #6c757d; /* Neutral gray for email */
-  color: white;
+  width: auto; /* Adjust size of the icon */
+  height: 60px; /* Maintain aspect ratio */
 }
 
 .cv-button {
