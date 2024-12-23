@@ -310,7 +310,7 @@ footer p{
         font-size: 15px;
     }
 
-    .experience, .education, .skills{
+    .experience_c, .education_c, .skills{
         display: none;
     }
 
@@ -319,6 +319,9 @@ footer p{
         border-bottom: #c7c7c7 1px solid;
     }
 
+    .resume-sections {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
     /* Projects */
 
     .projects h2{
