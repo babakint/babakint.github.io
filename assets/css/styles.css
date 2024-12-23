@@ -24,13 +24,20 @@ body.dark-mode {
   color: #ffffff;
 }
 
-/* Button Styling */
 #theme-toggle {
-  position: absolute; /* Position relative to nearest positioned ancestor */
-  top: 20px; /* Distance from the top of the header */
-  left: 20px; /* Distance from the left of the header */
-  z-index: -1; /* Place behind other elements in stacking order */
+  position: fixed; /* Fix the button's position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right side of the page */
+  padding: 10px;
+  background: none; /* No background color */
+  border: none; /* Remove border */
+  cursor: pointer;
 }
+
+#theme-toggle:hover {
+  opacity: 0.8; /* Add a hover effect for better user feedback */
+}
+
 
 #theme-toggle:hover {
   background-color: #333333;
