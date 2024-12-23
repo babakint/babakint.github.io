@@ -200,11 +200,6 @@ main, .experience, .education, .education_c, .experience_c, .skills{
   height: auto; /* Maintain aspect ratio */
 }
 
-.scholar {
-  background-color: #4285f4; /* Google Scholar blue */
-  color: white;
-}
-
 .email {
   background-color: #6c757d; /* Neutral gray for email */
   color: white;
