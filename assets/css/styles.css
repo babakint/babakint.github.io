@@ -14,6 +14,29 @@ body{
     font-family: 'Work Sans', sans-serif;
 }
 
+/* Dark Mode */
+body.dark-mode {
+  background-color: #171D25;
+  color: #ffffff;
+}
+
+/* Button Styling */
+#theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+#theme-toggle:hover {
+  background-color: #333333;
+}
+
 /* Header */
 
 header, .resume h2{
