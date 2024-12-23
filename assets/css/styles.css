@@ -28,16 +28,13 @@ body.dark-mode {
   position: fixed; /* Fix the button's position relative to the viewport */
   bottom: 20px; /* Distance from the bottom of the page */
   right: 20px; /* Distance from the right side of the page */
-  padding: 10px;
+  padding: 10px 20px;
+  background-color: #000000;
   background: none; /* No background color */
-  border: none; /* Remove border */
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
-
-#theme-toggle:hover {
-  opacity: 0.8; /* Add a hover effect for better user feedback */
-}
-
 
 #theme-toggle:hover {
   background-color: #333333;
