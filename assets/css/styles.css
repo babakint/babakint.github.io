@@ -176,8 +176,8 @@ main, .experience, .education, .education_c, .experience_c, .skills{
 .button-group {
   display: flex; /* Arrange buttons in a row */
   justify-content: center; /* Center align the buttons */
-  gap: 15px; /* Add spacing between buttons */
-  margin-top: 20px; /* Add space above the button group */
+  gap: 5px; /* Add spacing between buttons */
+  margin-top: 5px; /* Add space above the button group */
 }
 
 .button-group a {
@@ -190,7 +190,7 @@ main, .experience, .education, .education_c, .experience_c, .skills{
   display: inline-flex; /* Use flexbox for alignment */
   align-items: center; /* Vertically center content */
   justify-content: center; /* Horizontally center content */
-  height: 60px; /* Set fixed height */
+  height: 40px; /* Set fixed height */
   padding: 0 20px; /* Add horizontal padding for buttons with text */
   border-radius: 5px; /* Optional: Rounded corners for buttons */
   text-decoration: none; /* Remove underline from links */
@@ -199,8 +199,9 @@ main, .experience, .education, .education_c, .experience_c, .skills{
 }
 
 .social-button img.icon {
-  max-height: 60px; /* Icon image height matches button height */
+  max-height: 40px; /* Icon image height matches button height */
   width: auto; /* Maintain aspect ratio */
+  display: block;
 }
 
 .cv-button {
