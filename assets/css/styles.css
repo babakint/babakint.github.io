@@ -106,6 +106,19 @@ main, .experience, .education, .skills{
     border-bottom: #c7c7c7 1px solid;
 }
 
+/* Wrapper for Education and Experience sections */
+.resume-sections {
+    display: flex; /* Enable flexbox for side-by-side layout */
+    justify-content: space-between; /* Add space between columns */
+    gap: 20px; /* Optional: Add spacing between columns */
+}
+
+/* Style for individual columns */
+.education_c, .experience_c {
+    flex: 1; /* Ensure both columns take equal width */
+    padding: 20px; /* Add padding inside each column */
+}
+
 .heading, .experience, .information, .education, .education-column, .skills, .projects-list, footer{
     display: flex;
 }
