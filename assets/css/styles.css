@@ -187,15 +187,17 @@ main, .experience, .education, .education_c, .experience_c, .skills{
 /* General Button Styling */
 .social-button,
 .cv-button {
-  display: flex; /* Use flexbox for alignment */
-  align-items: center; /* Vertically center content */
-  justify-content: center; /* Horizontally center content */
+  /* display: flex; /* Use flexbox for alignment */
+  /* align-items: center; /* Vertically center content */
+  /* justify-content: center;  Horizontally center content */
   height: 40px; /* Set fixed height */
-  /* padding: 0 20px;  Add horizontal padding for buttons with text */
+  line-height: 60px;
+  padding: 0 20px; /*  Add horizontal padding for buttons with text */
   border-radius: 5px; /* Optional: Rounded corners for buttons */
   text-decoration: none; /* Remove underline from links */
   font-size: 16px; /* Font size for text buttons */
   font-family: 'Arial', sans-serif;
+  text-align: center;
 }
 
 .social-button img.icon {
