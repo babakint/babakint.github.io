@@ -198,12 +198,14 @@ main, .experience, .education, .education_c, .experience_c, .skills{
   /* justify-content: center;  Horizontally center content */
   height: 40px; /* Set fixed height */
   line-height: 40px;
-  padding: 0 10px; /*  Add horizontal padding for buttons with text */
+  padding: 0 5px; /*  Add horizontal padding for buttons with text */
   border-radius: 5px; /* Optional: Rounded corners for buttons */
   text-decoration: none; /* Remove underline from links */
-  font-size: 16px; /* Font size for text buttons */
+  font-size: 14px; /* Font size for text buttons */
   font-family: 'Arial', sans-serif;
   text-align: center;
+  white-space: nowrap; /* Prevent text wrapping */
+  width: fit-content; /* Dynamically adjust width to fit text */
 }
 
 .social-button img.icon {
@@ -399,6 +401,16 @@ footer p{
         display: none;
     }
 
+    .cv-button {
+    font-size: 14px; /* Reduce font size on smaller screens */
+    padding: 5px; /* Adjust padding for smaller buttons */
+    min-width: unset; /* Allow flexible resizing if needed */
+    width: fit-content; /* Ensure it still adjusts dynamically */
+    height: auto; /* Allow flexible height if necessary */
+    line-height: normal; /* Reset line-height for better readability */
+    white-space: nowrap; /* Ensure no wrapping occurs */
+    }
+    
     .resume{
         padding-bottom: 30px;
         border-bottom: #c7c7c7 1px solid;
