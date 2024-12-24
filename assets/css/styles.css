@@ -13,6 +13,12 @@ header {
   position: relative; /* Establish a stacking context for child elements */
 }
 
+.bio {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  gap: 20px; /* Add space between paragraphs and buttons */
+}
+
 body{
     background-color: #f3f3f3;
     font-family: 'Work Sans', sans-serif;
