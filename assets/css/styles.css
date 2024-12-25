@@ -31,6 +31,11 @@ header {
   height: 60%;  /*  Set height of the frame */
 }
 
+.radioframe {
+  width: 60%; /* Set width of the frame */
+  height: 5%;  /*  Set height of the frame */
+}
+
 .talk-image {
   max-width: 60%; /* Ensure the image does not exceed its container's width */
   height: auto; /* Maintain the aspect ratio */
