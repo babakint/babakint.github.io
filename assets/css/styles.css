@@ -25,18 +25,26 @@ header {
   margin: 20px 0;
 }
 
+.parentvid {
+  position: relative;
+  width: 100%;
+  padding-bottom: 33.75%; /* This is 56.25% * 0.6 to maintain 16:9 ratio at 60% width */
+  margin: 20px 0;
+}
+
 /* Special case for radio player */
 .parent:has(.radioframe) {
   height: auto;
   position: static;
 }
 
-.parent iframe:not(.radioframe) {
+.parentvid iframe {
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 0;
   width: 60%;
   height: 100%;
+  left: 50%;
   transform: translateX(-50%);
 }
 
