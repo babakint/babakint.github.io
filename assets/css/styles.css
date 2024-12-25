@@ -112,6 +112,22 @@ h4{
     margin-bottom: 5px;
 }
 
+.content {
+  width: 60%; /* Consistent width */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px; /* Add some padding around the content */
+  font-family: 'Arial', sans-serif; /* Use consistent font */
+  line-height: 1.6; /* Improve readability */
+}
+
+.content h1, .content h2, .content h3 {
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
 .photo{
     width: 500px;
     height: 500px;
