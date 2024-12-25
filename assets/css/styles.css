@@ -19,6 +19,18 @@ header {
   gap: 20px; /* Add space between paragraphs and buttons */
 }
 
+.parent {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Optional: Set height of the container */
+}
+
+.frame {
+  width: 80%; /* Set width of the frame */
+  height: 60%; /* Set height of the frame */
+}
+
 .talk-image {
   max-width: 100%; /* Ensure the image does not exceed its container's width */
   height: auto; /* Maintain the aspect ratio */
