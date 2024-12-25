@@ -549,7 +549,7 @@ footer p{
         font-size: 15px;
     }
 
-    .experience_c, .education_c, .skills{
+    .experience_c, .education_c{
         display: none;
     }
 
