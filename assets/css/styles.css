@@ -28,7 +28,7 @@ header {
 
 .frame {
   width: 60%; /* Set width of the frame */
-  height: auto;  /*  Set height of the frame */
+  height: 60%;  /*  Set height of the frame */
 }
 
 .talk-image {
