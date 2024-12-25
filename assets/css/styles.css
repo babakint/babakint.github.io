@@ -33,9 +33,9 @@ header {
 }
 
 .location-text {
-  font-size: 14px; /* Smaller font size than bio */
+  font-size: 12px; /* Smaller font size than bio */
   color: #666; /* Subtle color */
-  margin-bottom: 10px; /* Space between text and icons */
+  margin-bottom: 3px; /* Space between text and icons */
   font-family: 'Montserrat', sans-serif;
 }
 
