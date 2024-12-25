@@ -35,7 +35,8 @@ header {
 .location-text {
   font-size: 12px; /* Smaller font size than bio */
   color: #666; /* Subtle color */
-  margin-bottom: 3px; /* Space between text and icons */
+  margin-bottom: 1px; /* Space between text and icons */
+  line-height: 1.2; /* Reduce line height */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -304,7 +305,7 @@ main, .experience, .education, .education_c, .experience_c{
   display: flex; /* Arrange buttons in a row */
   justify-content: flex-start; /* Center align the buttons */
   gap: 5px; /* Add spacing between buttons */
-  margin-top: 5px; /* Add space above the button group */
+  margin-top: 1px; /* Add space above the button group */
   padding-left: 0; /* Ensure no left padding */
   width: 100%; /* Match parent width */
 }
