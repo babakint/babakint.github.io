@@ -295,42 +295,30 @@ main, .experience, .education, .education_c, .experience_c{
 /* Grouping Buttons */
 .button-group {
   display: flex; /* Arrange buttons in a row */
-  justify-content: center; /* Center align the buttons */
+  justify-content: flex-start; /* Center align the buttons */
   gap: 5px; /* Add spacing between buttons */
   margin-top: 5px; /* Add space above the button group */
+  padding-left: 0; /* Ensure no left padding */
+  width: 100%; /* Match parent width */
 }
 
 .button-group a {
   display: inline-block; /* Ensure each button behaves like a block element */
 }
 
-/* General Button Styling */
-.social-button,
-.cv-button {
-  /* display: flex; /* Use flexbox for alignment */
-  /* align-items: center; /* Vertically center content */
-  /* justify-content: center;  Horizontally center content */
-  height: 40px; /* Set fixed height */
-  line-height: 40px;
-  padding: 0 5px; /*  Add horizontal padding for buttons with text */
-  border-radius: 5px; /* Optional: Rounded corners for buttons */
-  text-decoration: none; /* Remove underline from links */
-  font-size: 14px; /* Font size for text buttons */
-  font-family: 'Arial', sans-serif;
-  text-align: center;
-  white-space: nowrap; /* Prevent text wrapping */
-  width: fit-content; /* Dynamically adjust width to fit text */
+.social-button {
+  height: 40px;
+  width: 40px; /* Set fixed width for icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove padding */
 }
 
 .social-button img.icon {
   max-height: 40px; /* Icon image height matches button height */
   width: auto; /* Maintain aspect ratio */
-  display: block;
-}
-
-.cv-button {
-  background-color: #5F949F; /* Black for CV button */
-  color: white;
+  object-fit: contain; /* Ensure icon fits properly */
 }
 
 /* Hover Effects for All Buttons */
@@ -345,6 +333,13 @@ main, .experience, .education, .education_c, .experience_c{
   font-weight: bold;
 }
 
+.cv-button {
+  background-color: #5F949F; /* Black for CV button */
+  color: white;
+  padding: 0 15px; /* Add horizontal padding only for the CV button */
+  height: 40px;
+  line-height: 40px;
+}
 
 /* Icon fonts */
 
