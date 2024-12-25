@@ -37,7 +37,7 @@ header {
   color: #3171AE; /* Subtle color */
   margin-top: 10px;
   margin-bottom: 0px; /* Space between text and icons */
-  line-height: 1.2; /* Reduce line height */
+  line-height: 1.; /* Reduce line height */
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -122,8 +122,8 @@ body.dark-mode {
 
 /* Header */
 
-header, .resume h2{
-    margin-bottom: 40px;
+.resume h2{
+    margin-bottom: 0px;
 }
 
 a{
@@ -133,6 +133,7 @@ a{
 }
 
 header{
+    margin-bottom: 40px;
     padding: 20px;
     display: flex;
     justify-content: space-between;
@@ -259,7 +260,7 @@ main, .experience, .education, .education_c, .experience_c{
 
 .skills {
     border-bottom: none; /* Remove this line or set to none */
-    padding: 20px 30px;
+    padding: 10px 20px;
     border-top: 1px solid #c7c7c7; /* Add separator line */
 }
 
@@ -280,7 +281,7 @@ main, .experience, .education, .education_c, .experience_c{
     display: flex;
 }
 
-.experience, .education, .skills{
+.experience, .education{
     padding: 50px 30px;
 }
 
