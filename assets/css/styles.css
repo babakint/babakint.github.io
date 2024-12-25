@@ -136,6 +136,16 @@ header div p{
 
 /* Navigation */
 
+nav a{
+    padding-left: 20px;
+}
+
+nav a:nth-child(-n+5){
+    padding-right: 20px;
+    border-right: #000 1px solid;
+}
+
+/*
 nav {
     display: flex;
     gap: 20px;
@@ -146,11 +156,11 @@ nav a {
     padding: 10px 15px;
     position: relative;
 }
-
-/* Remove the old border styling */
+*/
+/* Remove the old border styling 
 nav a:nth-child(-n+5) {
     border-right: 1px solid #000;
-}
+}*/
 
 /* Add hover effect */
 nav a:hover {
