@@ -26,6 +26,10 @@ header {
   /* height: 100vh;  Optional: Set height of the container */
 }
 
+.parent iframe {
+  max-width: 100%; /* Ensure iframe scales within its container */
+}
+
 .frame {
   width: 60%; /* Set width of the frame */
   height: 60%;  /*  Set height of the frame */
@@ -40,16 +44,23 @@ header {
   max-width: 60%; /* Ensure the image does not exceed its container's width */
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any extra inline spacing */
-  margin: 1px auto; /* Center the image and add spacing */
+  margin: 10px auto; /* Center the image and add spacing */
   border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .talk-item {
-  margin-bottom: 10px; /* Add space between talks */
+  margin-bottom: 30px; /* Add space between talks */
 }
 
 .talk-item p {
   margin-top: 10px; /* Add spacing between the image and text */
+}
+
+.talk-item hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #ccc; /* Optional styling for horizontal rule */
 }
 
 body{
@@ -388,6 +399,26 @@ footer p{
     }
 }
 
+@media (max-width: 768px) {
+  .talk-item {
+    margin-bottom: 20px; /* Reduce spacing slightly on smaller screens */
+    text-align: center; /* Center-align content for better readability */
+  }
+
+  .radioframe,
+  .frame {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow flexible height */
+    min-height: 150px; /* Set a minimum height for visibility */
+    margin-bottom: 20px;
+  }
+
+  .talk-image {
+    max-width: 90%; /* Slightly smaller images on mobile devices */
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+}
 
 @media screen and (max-width: 460px) {
 
