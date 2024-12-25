@@ -40,11 +40,11 @@ header {
 }
 
 .talk-item {
-  margin-bottom: 5px; /* Add space between talks */
+  margin-bottom: 10px; /* Add space between talks */
 }
 
 .talk-item p {
-  margin-top: 1px; /* Add spacing between the image and text */
+  margin-top: 10px; /* Add spacing between the image and text */
 }
 
 body{
