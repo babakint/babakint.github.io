@@ -32,6 +32,13 @@ header {
   margin: 20px 0;
 }
 
+.location-text {
+  font-size: 14px; /* Smaller font size than bio */
+  color: #666; /* Subtle color */
+  margin-bottom: 10px; /* Space between text and icons */
+  font-family: 'Montserrat', sans-serif;
+}
+
 /* Special case for radio player */
 .parent:has(.radioframe) {
   height: auto;
