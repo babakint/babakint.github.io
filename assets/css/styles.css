@@ -232,8 +232,8 @@ h4{
 }
 
 .photo{
-    width: 500px;
-    height: 500px;
+    width: 400px;
+    height: 400px;
     background-image: url(../images/babak-ehteshami-bejnordi-photo.jpg);
     border-radius: 50%;
     background-position: center;
@@ -249,7 +249,7 @@ h4{
 }
 
 .heading div:last-child{
-    width: 50%;
+    width: 60%;
 }
 
 /* Resume section */
