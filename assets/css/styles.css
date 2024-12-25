@@ -22,18 +22,21 @@ header {
 .parent {
   position: relative;
   width: 100%;
-  padding-bottom: 33.75%; /* 16:9 aspect ratio */
   margin: 20px 0;
 }
 
+/* Special case for radio player */
+.parent:has(.radioframe) {
+  height: auto;
+  position: static;
+}
 
-.parent iframe {
+.parent iframe:not(.radioframe) {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   width: 60%;
   height: 100%;
-  left: 50%;
   transform: translateX(-50%);
 }
 
