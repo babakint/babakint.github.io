@@ -20,14 +20,21 @@ header {
 }
 
 .parent {
-  display: flex; /* Enable flexbox */
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
-  /* height: 100vh;  Optional: Set height of the container */
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  margin: 20px 0;
 }
 
+
 .parent iframe {
-  max-width: 100%; /* Ensure iframe scales within its container */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .frame {
@@ -36,8 +43,10 @@ header {
 }
 
 .radioframe {
-  width: 60%; /* Set width of the frame */
-  height: 5%;  /*  Set height of the frame */
+  width: 60%;
+  height: 90px !important; /* Fixed height for audio player */
+  margin: 0 auto;
+  display: block;
 }
 
 .talk-image {
