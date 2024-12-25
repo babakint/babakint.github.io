@@ -28,11 +28,11 @@ header {
 
 .frame {
   width: 60%; /* Set width of the frame */
-  height: 33.6%;  /*  Set height of the frame */
+  height: 60%;  /*  Set height of the frame */
 }
 
 .talk-image {
-  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  max-width: 60%; /* Ensure the image does not exceed its container's width */
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any extra inline spacing */
   margin: 1px auto; /* Center the image and add spacing */
