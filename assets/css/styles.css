@@ -19,6 +19,22 @@ header {
   gap: 20px; /* Add space between paragraphs and buttons */
 }
 
+.talk-image {
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra inline spacing */
+  margin: 10px auto; /* Center the image and add spacing */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.talk-item {
+  margin-bottom: 30px; /* Add space between talks */
+}
+
+.talk-item p {
+  margin-top: 10px; /* Add spacing between the image and text */
+}
+
 body{
     background-color: #f3f3f3;
     font-family: 'Work Sans', sans-serif;
