@@ -35,16 +35,16 @@ header {
   max-width: 100%; /* Ensure the image does not exceed its container's width */
   height: auto; /* Maintain the aspect ratio */
   display: block; /* Remove any extra inline spacing */
-  margin: 10px auto; /* Center the image and add spacing */
+  margin: 1px auto; /* Center the image and add spacing */
   border-radius: 5px; /* Optional: Add rounded corners */
 }
 
 .talk-item {
-  margin-bottom: 30px; /* Add space between talks */
+  margin-bottom: 5px; /* Add space between talks */
 }
 
 .talk-item p {
-  margin-top: 10px; /* Add spacing between the image and text */
+  margin-top: 1px; /* Add spacing between the image and text */
 }
 
 body{
