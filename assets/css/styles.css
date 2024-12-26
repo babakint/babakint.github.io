@@ -528,13 +528,13 @@ a span{
   color: #333; /* Dark text for readability */
   text-align: center;
   padding: 1rem;
-  font-size: 0.8rem;
+  font-size: 0.6rem;
 }
 
 .footer a {
   color: #5F949F; /* Blue link color */
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.7rem;
 }
 
 .footer a:hover {
@@ -592,7 +592,7 @@ a span{
   }
 
   .footer {
-    font-size: 0.8rem; /* Slightly smaller text on smaller screens */
+    font-size: 0.5rem; /* Slightly smaller text on smaller screens */
     padding: 0.8rem;
   }
 }
@@ -715,7 +715,7 @@ a span{
     }
 
   .footer {
-    font-size: 0.8rem; /* Slightly smaller text on smaller screens */
+    font-size: 0.5rem; /* Slightly smaller text on smaller screens */
     padding: 0.8rem;
   }
     
