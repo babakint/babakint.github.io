@@ -265,8 +265,8 @@ main, .experience, .education, .education_c, .experience_c{
 }
 
 .skills {
-    border-bottom: none; /* Remove this line or set to none */
-    padding: 20px 0px;
+    /* border-bottom: none;  Remove this line or set to none */
+    padding: 20px 30px;
     border-top: 1px solid #c7c7c7; /* Add separator line */
     width: 70%; /* Match bio width */
     min-width: 700px; /* Prevent shrinking below this width */
@@ -277,17 +277,21 @@ main, .experience, .education, .education_c, .experience_c{
 .skills h1 {
     margin-bottom: 15px;
     white-space: nowrap; /* Prevent heading from wrapping */
+    margin-left: 0; /* Align heading with left edge */
 }
 
 .skills ul {
     list-style-position: outside; /* Keep bullets aligned */
     padding-left: 20px; /* Space for bullets */
     margin: 0;
+    margin-left: 0; /* Align heading with left edge */
 }
 
 .skills li {
     margin-bottom: 10px; /* Space between list items */
     line-height: 1.2; /* Improve readability */
+    padding-left: 10px; /* Add some space between bullet and text */
+    text-indent: -5px; /* Pull the text back slightly for better alignment */
 }
 
 /* Wrapper for Education and Experience sections */
