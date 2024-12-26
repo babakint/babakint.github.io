@@ -234,22 +234,28 @@ h4{
 .photo{
     width: 350px;
     height: 350px;
+    min-width: 350px; /* Prevent shrinking below this width */
+    min-height: 350px; /* Prevent shrinking below this height */
     background-image: url(../images/babak-ehteshami-bejnordi-photo.jpg);
     border-radius: 50%;
     background-position: center;
     background-size: cover;
+    flex-shrink: 0; /* Prevent the image from shrinking */
 }
 
 .heading{
     margin: 0 auto;
-    width: 90%;
+    width: 80%;
+    display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     padding-bottom: 40px;
+    min-width: 1024px;
 }
 
 .heading div:last-child{
     width: 60%;
+    min-width: 500px;
 }
 
 /* Resume section */
