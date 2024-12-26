@@ -573,14 +573,8 @@ footer a:hover {
         margin-bottom: 15px;
   }
     footer {
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-        justify-content: center; /* Center-align items */
-        align-items: center;
-    }
-    
-    footer a {
-        margin: 0 5px; /* Add space around links */
+        font-size: 10px; /* Adjust font size for better fit */
+        line-height: 1.4; /* Increase line height slightly for readability */
     }
     
 }
@@ -703,13 +697,8 @@ footer a:hover {
     }
 
     footer {
-        display: flex;
-        flex-wrap: wrap; /* Allow items to wrap on smaller screens */
-        justify-content: center; /* Center-align items */
-        align-items: center;
+        font-size: 10px; /* Adjust font size for better fit */
+        line-height: 1.4; /* Increase line height slightly for readability */
     }
     
-    footer a {
-        margin: 0 5px; /* Add space around links */
-    }
 }
