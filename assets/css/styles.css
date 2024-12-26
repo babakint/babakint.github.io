@@ -576,7 +576,9 @@ footer a:hover {
         font-size: 10px; /* Adjust font size for better fit */
         line-height: 1.4; /* Increase line height slightly for readability */
     }
-    
+    footer a {
+    white-space: nowrap; /* Prevent link from breaking onto multiple lines */
+    }
 }
 
 @media screen and (max-width: 460px) {
@@ -699,6 +701,9 @@ footer a:hover {
     footer {
         font-size: 10px; /* Adjust font size for better fit */
         line-height: 1.4; /* Increase line height slightly for readability */
+    }
+    footer a {
+    white-space: nowrap; /* Prevent link from breaking onto multiple lines */
     }
     
 }
