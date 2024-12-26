@@ -289,6 +289,7 @@ main, .experience, .education, .education_c, .experience_c{
     margin-left: 0; /* Align heading with left edge */
     margin-top: 10px;
     clear: both; /* Ensure list starts on new line */
+    width: 75%; /* Control list width */
 }
 
 .skills li {
@@ -296,6 +297,7 @@ main, .experience, .education, .education_c, .experience_c{
     line-height: 1.2; /* Improve readability */
     padding-left: 10px; /* Add some space between bullet and text */
     text-indent: -5px; /* Pull the text back slightly for better alignment */
+    padding-right: 20px; /* Add some space on the right */
 }
 
 /* Wrapper for Education and Experience sections */
