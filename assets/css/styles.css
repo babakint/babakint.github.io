@@ -114,7 +114,7 @@ header {
     list-style-position: outside;
     padding-left: 50px;
     margin: 0;
-    width: 80%; /* Match bio width */
+    width: 100%; /* Match bio width */
     min-width: 600px;
 }
 
