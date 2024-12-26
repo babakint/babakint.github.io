@@ -512,11 +512,6 @@ footer {
     text-align: center;
 }
 
-.footer-link-spacing {
-    margin: 0 4px;
-    display: inline-block;
-}
-
 footer a {
     color: #82853E;
     text-decoration: none;
@@ -582,7 +577,6 @@ footer a:hover {
         padding: 15px 10px;
         font-size: 10px;
     }
-    
     footer a {
         font-size: 10px;
         display: inline;
@@ -712,7 +706,6 @@ footer a:hover {
         padding: 15px 10px;
         font-size: 10px;
     }
-    
     footer a {
         font-size: 10px;
         display: inline;
