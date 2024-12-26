@@ -278,6 +278,8 @@ main, .experience, .education, .education_c, .experience_c{
     margin-bottom: 15px;
     white-space: nowrap; /* Prevent heading from wrapping */
     margin-left: 0; /* Align heading with left edge */
+    display: block;
+    width: 100%;
 }
 
 .skills ul {
@@ -285,6 +287,8 @@ main, .experience, .education, .education_c, .experience_c{
     padding-left: 20px; /* Space for bullets */
     margin: 0;
     margin-left: 0; /* Align heading with left edge */
+    margin-top: 10px;
+    clear: both; /* Ensure list starts on new line */
 }
 
 .skills li {
