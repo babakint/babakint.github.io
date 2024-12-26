@@ -231,16 +231,22 @@ h4{
   margin-bottom: 15px;
 }
 
-.photo{
+.photo, .newsphoto{
     width: 350px;
     height: 350px;
     min-width: 350px; /* Prevent shrinking below this width */
     min-height: 350px; /* Prevent shrinking below this height */
-    background-image: url(../images/babak-ehteshami-bejnordi-photo.jpg);
     border-radius: 50%;
     background-position: center;
     background-size: cover;
     flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.photo{
+    background-image: url(../images/babak-ehteshami-bejnordi-photo.jpg);
+}
+.newsphoto{
+    background-image: url(../images/news.svg);
 }
 
 .heading{
