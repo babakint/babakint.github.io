@@ -502,16 +502,16 @@ a span{
 
 
 .footer {
-  background-color: #f8f9fa; /* Light gray background for contrast */
   color: #333; /* Dark text for readability */
   text-align: center;
   padding: 1rem;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
 }
 
 .footer a {
-  color: #007bff; /* Blue link color */
+  color: #5F949F; /* Blue link color */
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .footer a:hover {
