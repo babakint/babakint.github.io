@@ -506,16 +506,17 @@ footer {
     width: 90%;
     margin: 20px auto;
     padding: 20px 0;
-    font-size: 12px;
+    font-size: 10px;
     color: #666;
     font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
     text-align: center;
 }
 
 footer a {
     color: #82853E;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: normal;
     font-family: 'Montserrat', sans-serif;
 }
