@@ -30,10 +30,10 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButton.addEventListener('click', function() {
         if (hiddenContent.classList.contains('hidden')) {
             hiddenContent.classList.remove('hidden');
-            toggleButton.textContent = 'Read less';
+            toggleButton.textContent = 'Show less';
         } else {
             hiddenContent.classList.add('hidden');
-            toggleButton.textContent = 'Read more';
+            toggleButton.textContent = 'Show more';
         }
     });
 });
