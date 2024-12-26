@@ -514,25 +514,10 @@ footer{
     font-size: 10px;
 }
 
-footer div{
-    width: 600px;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-footer p{
-    width: 600px;
-    text-align: center;
-}
-
 @media screen and (max-width: 1024px){
     .photo{
         width: 350px;
         height: 350px;
-    }
-    footer div{
-        width: 250px;
     }
 }
 
@@ -702,9 +687,5 @@ footer p{
         height: fit-content;
         flex-wrap: nowrap;
         flex-direction: column;
-    }
-
-    footer div{
-        margin: 20px 0;
     }
 }
