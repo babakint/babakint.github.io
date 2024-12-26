@@ -269,8 +269,9 @@ main, .experience, .education, .education_c, .experience_c{
     padding: 20px 30px;
     border-top: 1px solid #c7c7c7; /* Add separator line */
     width: 70%; /* Match bio width */
-    min-width: 600px; /* Prevent shrinking below this width */
+    min-width: 700px; /* Prevent shrinking below this width */
     margin: 0 auto; /* Center the section */
+    font-size: 16px;
 }
 
 .skills h1 {
@@ -282,11 +283,13 @@ main, .experience, .education, .education_c, .experience_c{
     list-style-position: outside; /* Keep bullets aligned */
     padding-left: 20px; /* Space for bullets */
     margin: 0;
+    white-space: nowrap;
 }
 
 .skills li {
     margin-bottom: 10px; /* Space between list items */
-    line-height: 1.4; /* Improve readability */
+    line-height: 1.2; /* Improve readability */
+    white-space: nowrap;
 }
 
 /* Wrapper for Education and Experience sections */
