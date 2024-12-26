@@ -61,9 +61,11 @@ header {
     display: none;
 }
 
+.button-wrapper {
+    text-align: left;
+}
+
 .toggle-btn {
-    float: left;
-    clear: both;
     background: none;
     border: none;
     color: #82853E;
