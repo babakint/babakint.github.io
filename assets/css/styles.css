@@ -62,9 +62,11 @@ header {
 }
 
 .toggle-btn {
+    float: left;
+    clear: both;
     background: none;
     border: none;
-    color: #0066cc;
+    color: #82853E;
     cursor: pointer;
     padding: 5px 0;
     font-size: 1em;
