@@ -57,11 +57,24 @@ header {
   transform: translateX(-50%);
 }
 
-<style>
-    .hidden {
-        display: none;
-    }
-</style>
+.hidden {
+    display: none;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #0066cc;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.toggle-btn:hover {
+    color: #003366;
+}
+
 
 .frame {
   width: 60%; /* Set width of the frame */
