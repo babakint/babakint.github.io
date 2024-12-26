@@ -577,6 +577,17 @@ footer a:hover {
   .updates li {
         margin-bottom: 15px;
   }
+    footer {
+        width: 95%;
+        padding: 15px 10px;
+        font-size: 10px;
+    }
+    
+    footer a {
+        font-size: 10px;
+        display: inline;
+    }
+    
 }
 
 @media screen and (max-width: 460px) {
@@ -696,11 +707,14 @@ footer a:hover {
         font-size: 15px;
     }
 
-    /* Footer */
-
-    footer{
-        height: fit-content;
-        flex-wrap: nowrap;
-        flex-direction: column;
+    footer {
+        width: 95%;
+        padding: 15px 10px;
+        font-size: 10px;
+    }
+    
+    footer a {
+        font-size: 10px;
+        display: inline;
     }
 }
