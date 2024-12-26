@@ -503,15 +503,29 @@ a span{
 /* Footer */
 
 footer{
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
     width: 90%;
-    margin: 0 auto;
-    padding: 20px;
-    align-content: space-between;
-    align-items: center;
-    font-size: 10px;
+    margin: 20px auto;
+    padding: 20px 0;
+    border-top: 1px solid #c7c7c7;
+    font-size: 14px;
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+footer a {
+    color: #666;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px){
