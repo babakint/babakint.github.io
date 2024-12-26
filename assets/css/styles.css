@@ -92,6 +92,39 @@ header {
   border-top: 1px solid #ccc; /* Optional styling for horizontal rule */
 }
 
+.updates {
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    min-width: 1024px;
+    border-top: 1px solid #c7c7c7;
+}
+
+.updates h1 {
+    margin-bottom: 15px;
+    white-space: nowrap;
+    display: block;
+    padding: 20px 0 0 30px;
+    font-size: 26px; /* Match other section headings */
+}
+
+.updates ul {
+    list-style-position: outside;
+    padding-left: 50px;
+    margin: 0;
+    width: 60%; /* Match bio width */
+    min-width: 600px;
+}
+
+.updates li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    padding-right: 0;
+}
+
+
 body{
     background-color: #f3f3f3;
     font-family: 'Work Sans', sans-serif;
