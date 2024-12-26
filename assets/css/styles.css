@@ -554,6 +554,28 @@ footer p{
     margin-bottom: 15px;
     border-radius: 5px;
   }
+
+  .updates {
+        width: 90%; /* Match heading width */
+        min-width: unset; /* Remove min-width constraint */
+        padding: 20px;
+  }
+
+  .updates h1 {
+        padding: 10px 0;
+        font-size: 22px;
+        white-space: normal; /* Allow text to wrap */ 
+  }
+    
+  .updates ul {
+        width: 100%; /* Full width on mobile */
+        min-width: unset;
+        padding-left: 20px;
+  }
+    
+  .updates li {
+        margin-bottom: 15px;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -583,6 +605,11 @@ footer p{
     .frame {
       width: 100%; /* Set width of the frame */
       height: auto;  /*  Set height of the frame */
+    }
+
+    .updates {
+        width: 95%; /* Slightly wider on very small screens */
+        padding: 15px;
     }
     
     .talk-image {
