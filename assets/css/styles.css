@@ -266,8 +266,27 @@ main, .experience, .education, .education_c, .experience_c{
 
 .skills {
     border-bottom: none; /* Remove this line or set to none */
-    padding: 10px 20px;
+    padding: 20px 30px;
     border-top: 1px solid #c7c7c7; /* Add separator line */
+    width: 60%; /* Match bio width */
+    min-width: 600px; /* Prevent shrinking below this width */
+    margin: 0 auto; /* Center the section */
+}
+
+.skills h1 {
+    margin-bottom: 15px;
+    white-space: nowrap; /* Prevent heading from wrapping */
+}
+
+.skills ul {
+    list-style-position: outside; /* Keep bullets aligned */
+    padding-left: 20px; /* Space for bullets */
+    margin: 0;
+}
+
+.skills li {
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.4; /* Improve readability */
 }
 
 /* Wrapper for Education and Experience sections */
@@ -570,6 +589,9 @@ footer p{
     }
     
     .resume{
+        width: 100%;
+        min-width: 1024px; /* Match heading minimum width */
+        margin: 0 auto;
         padding-bottom: 30px;
         border-bottom: #c7c7c7 1px solid;
     }
