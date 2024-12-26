@@ -523,6 +523,10 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+footer p {
+    margin: 0;
+    padding: 0;
+}
 
 @media screen and (max-width: 1024px){
     .photo{
@@ -576,8 +580,9 @@ footer a:hover {
         font-size: 10px; /* Adjust font size for better fit */
         line-height: 1.4; /* Increase line height slightly for readability */
     }
-    footer a {
-    white-space: nowrap; /* Prevent link from breaking onto multiple lines */
+    footer p {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -702,8 +707,9 @@ footer a:hover {
         font-size: 10px; /* Adjust font size for better fit */
         line-height: 1.4; /* Increase line height slightly for readability */
     }
-    footer a {
-    white-space: nowrap; /* Prevent link from breaking onto multiple lines */
+    footer p {
+    margin: 0;
+    padding: 0;
     }
     
 }
