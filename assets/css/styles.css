@@ -506,8 +506,7 @@ footer{
     width: 90%;
     margin: 20px auto;
     padding: 20px 0;
-    border-top: 1px solid #c7c7c7;
-    font-size: 14px;
+    font-size: 12px;
     color: #666;
     font-family: 'Montserrat', sans-serif;
     text-align: center;
@@ -520,7 +519,7 @@ footer p {
 }
 
 footer a {
-    color: #666;
+    color: #82853E; /* Match your other link colors */
     text-decoration: none;
 }
 
