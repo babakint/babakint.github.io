@@ -57,6 +57,12 @@ header {
   transform: translateX(-50%);
 }
 
+<style>
+    .hidden {
+        display: none;
+    }
+</style>
+
 .frame {
   width: 60%; /* Set width of the frame */
   height: 60%;  /*  Set height of the frame */
