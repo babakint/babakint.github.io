@@ -352,7 +352,7 @@ main, .experience, .education, .education_c, .experience_c{
     padding: 20px; /* Add padding inside each column */
 }
 
-.heading, .experience, .information, .education, .education-column, .skills, .projects-list, footer{
+.heading, .experience, .information, .education, .education-column, .skills, .projects-list{
     display: flex;
 }
 
@@ -500,33 +500,22 @@ a span{
     background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(123,123,122,1) 42%, rgb(182, 182, 182) 100%);
 }
 
-/* Footer */
 
-footer {
-    width: 90%;
-    margin: 20px auto;
-    padding: 20px 0;
-    font-size: 10px;
-    color: #666;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: normal;
-    text-align: center;
+.footer {
+  background-color: #f8f9fa; /* Light gray background for contrast */
+  color: #333; /* Dark text for readability */
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
 }
 
-footer a {
-    color: #82853E;
-    text-decoration: none;
-    font-size: 10px;
-    font-weight: normal;
-    font-family: 'Montserrat', sans-serif;
+.footer a {
+  color: #007bff; /* Blue link color */
+  text-decoration: none;
 }
 
-footer a:hover {
-    text-decoration: underline;
-}
-footer p {
-    margin: 0;
-    padding: 0;
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
 }
 
 @media screen and (max-width: 1024px){
@@ -534,6 +523,7 @@ footer p {
         width: 350px;
         height: 350px;
     }
+    
 }
 
 @media (max-width: 768px) {
@@ -577,14 +567,11 @@ footer p {
   .updates li {
         margin-bottom: 15px;
   }
-    footer {
-        font-size: 10px; /* Adjust font size for better fit */
-        line-height: 1.4; /* Increase line height slightly for readability */
-    }
-    footer p {
-        margin: 0;
-        padding: 0;
-    }
+
+  .footer {
+    font-size: 0.8rem; /* Slightly smaller text on smaller screens */
+    padding: 0.8rem;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -704,13 +691,9 @@ footer p {
         font-size: 15px;
     }
 
-    footer {
-        font-size: 10px; /* Adjust font size for better fit */
-        line-height: 1.4; /* Increase line height slightly for readability */
-    }
-    footer p {
-    margin: 0;
-    padding: 0;
-    }
+  .footer {
+    font-size: 0.8rem; /* Slightly smaller text on smaller screens */
+    padding: 0.8rem;
+  }
     
 }
