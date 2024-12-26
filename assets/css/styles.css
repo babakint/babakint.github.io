@@ -268,7 +268,7 @@ main, .experience, .education, .education_c, .experience_c{
     border-bottom: none; /* Remove this line or set to none */
     padding: 20px 30px;
     border-top: 1px solid #c7c7c7; /* Add separator line */
-    width: 60%; /* Match bio width */
+    width: 70%; /* Match bio width */
     min-width: 600px; /* Prevent shrinking below this width */
     margin: 0 auto; /* Center the section */
 }
