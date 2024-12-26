@@ -511,17 +511,18 @@ footer{
     padding: 20px;
     align-content: space-between;
     align-items: center;
+    font-size: 10px;
 }
 
 footer div{
-    width: 350px;
+    width: 600px;
     display: flex;
     justify-content: space-between;
     margin-top: 10px;
 }
 
 footer p{
-    width: 180px;
+    width: 600px;
     text-align: center;
 }
 
