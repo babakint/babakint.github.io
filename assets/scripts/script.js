@@ -21,3 +21,15 @@ toggleButton.addEventListener('click', () => {
     localStorage.setItem('theme', 'light'); // Save preference
   }
 });
+
+
+document.getElementById('toggle-button').addEventListener('click', function() {
+    const researchList = document.getElementById('research-list');
+    if (researchList.classList.contains('hidden')) {
+        researchList.classList.remove('hidden');
+        this.textContent = 'Read less';
+    } else {
+        researchList.classList.add('hidden');
+        this.textContent = 'Read more';
+    }
+});
