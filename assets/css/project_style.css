@@ -3,12 +3,19 @@
     margin: 2rem 0;
 }
 
+.projects-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;  /* Increases space between heading and cards */
+}
+
+
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 1rem;  /* Additional top padding for container */
 }
 
 .project-card {
