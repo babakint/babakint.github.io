@@ -2,10 +2,10 @@
     /* Light mode (default) variables */
     --bg-color: #f3f3f3;
     --text-color: #333333;
-    --accent-color: #007bff;
+    --accent-color: #A7A7A7;
     --divider-color: rgba(0, 0, 0, 0.2);
-    --card-bg: #363636;
-    --card-text-color: #A7A7A7;
+    --card-bg: #DDDDDD;
+    --card-text-color: #333333;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
@@ -13,7 +13,7 @@
 body.dark-mode {
     --bg-color: #191919;
     --text-color: #ffffff;
-    --accent-color: #4dabf7;
+    --accent-color: #A7A7A7;
     --divider-color: rgba(255, 255, 255, 0.2);
     --card-bg: #363636;
     --card-text-color: #A7A7A7;
