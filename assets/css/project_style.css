@@ -1,7 +1,7 @@
 :root {
     /* Light mode (default) variables */
-    --bg-color: #ffffff;
-    --text-color: #333333;
+    --bg-color: #363636;
+    --text-color: #A7A7A7;
     --accent-color: #007bff;
     --divider-color: rgba(0, 0, 0, 0.2);
     --card-bg: #ffffff;
@@ -10,8 +10,8 @@
 
 /* Dark mode variables */
 body.dark-mode {
-    --bg-color: #1a1a1a;
-    --text-color: #ffffff;
+    --bg-color: #4dabf7;
+    --text-color: #A7A7A7;
     --accent-color: #4dabf7;
     --divider-color: rgba(255, 255, 255, 0.2);
     --card-bg: #2c2c2c;
