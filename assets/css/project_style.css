@@ -3,6 +3,7 @@
     --bg-color: #f3f3f3;
     --text-color: #333333;
     --accent-color: #212121;
+    --tech-tag-color: #5E5E5E;
     --divider-color: rgba(0, 0, 0, 0.2);
     --card-bg: #DDDDDD;
     --card-text-color: #333333;
@@ -14,6 +15,7 @@ body.dark-mode {
     --bg-color: #191919;
     --text-color: #ffffff;
     --accent-color: #A7A7A7;
+    --tech-tag-color: #5E5E5E;
     --divider-color: rgba(255, 255, 255, 0.2);
     --card-bg: #363636;
     --card-text-color: #A7A7A7;
@@ -91,7 +93,7 @@ body {
 }
 
 .tech-tag {
-    background: var(--accent-color);
+    background: var(--tech-tag-color);
     color: var(--bg-color);
     padding: 0.25rem 0.75rem;
     border-radius: 15px;
