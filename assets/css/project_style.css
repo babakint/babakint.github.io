@@ -32,6 +32,8 @@ body {
 .projects-section {
     padding: 2rem;
     margin: 2rem 0;
+    max-width: 1200px;  /* Match the max-width of projects-container */
+    margin: 0 auto;     /* Center the entire section */
 }
 
 /*.projects-section{
@@ -40,7 +42,8 @@ body {
 
 .projects-section h1 {
     font-size: 34px;
-    padding: 2rem;
+    padding-left: 0;    /* Remove any left padding */
+    text-align: left;   /* Ensure left alignment */
     margin-bottom: 6rem;  /* Increases space between heading and cards */
 }
 
