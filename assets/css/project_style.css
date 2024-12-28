@@ -39,8 +39,9 @@ body {
 }*/
 
 .projects-section h1 {
-    font-size: 26px;
-    margin-bottom: 3rem;  /* Increases space between heading and cards */
+    font-size: 34px;
+    padding: 2rem;
+    margin-bottom: 4rem;  /* Increases space between heading and cards */
 }
 
 
