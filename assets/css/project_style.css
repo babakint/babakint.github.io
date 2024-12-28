@@ -1,20 +1,22 @@
 :root {
     /* Light mode (default) variables */
-    --bg-color: #363636;
+    --bg-color: #f3f3f3;
     --text-color: #A7A7A7;
     --accent-color: #007bff;
     --divider-color: rgba(0, 0, 0, 0.2);
-    --card-bg: #ffffff;
+    --card-bg: #363636;
+    --card-text-color: #A7A7A7;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode variables */
 body.dark-mode {
-    --bg-color: #4dabf7;
-    --text-color: #A7A7A7;
+    --bg-color: #191919;
+    --text-color: #ffffff;
     --accent-color: #4dabf7;
     --divider-color: rgba(255, 255, 255, 0.2);
-    --card-bg: #2c2c2c;
+    --card-bg: #363636;
+    --card-text-color: #A7A7A7;
     --card-shadow: rgba(0, 0, 0, 0.3);
 }
 
@@ -73,11 +75,11 @@ body {
 
 .project-content h3 {
     margin: 0 0 1rem 0;
-    color: var(--text-color);
+    color: var(--card-text-color);
 }
 
 .project-content p {
-    color: var(--text-color);
+    color: var(--card-text-color);
     margin-bottom: 1rem;
 }
 
