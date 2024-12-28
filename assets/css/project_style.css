@@ -53,6 +53,13 @@ body {
     padding-top: 1rem;  /* Additional top padding for container */
 }
 
+.conference-subtitle {
+    font-size: 0.85rem;
+    color: var(--tech-tag-color);
+    margin: -0.75rem 0 1rem 0;
+    font-style: italic;
+}
+
 .project-card {
     background: var(--card-bg);
     border-radius: 8px;
@@ -72,7 +79,7 @@ body {
 }
 
 .project-content {
-    padding: 1.5rem;
+    padding: 1rem;
 }
 
 .project-content h3 {
@@ -83,6 +90,14 @@ body {
 .project-content p {
     color: var(--card-text-color);
     margin-bottom: 1rem;
+}
+
+.project-content h3 + .conference-subtitle + p {
+    margin-top: 0;  /* Remove top margin from paragraph when after subtitle */
+}
+
+.project-content h3 + p {
+    margin-top: 0;  /* Remove top margin from paragraph when directly after title */
 }
 
 .tech-stack {
