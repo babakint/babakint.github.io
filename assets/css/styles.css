@@ -19,6 +19,13 @@ header {
   gap: 20px; /* Add space between paragraphs and buttons */
 }
 
+.bio iframe {
+    width: 100%; /* Full width inside container */
+    max-width: 800px; /* Optional: Limit maximum width */
+    height: 600px; /* Height of the embedded PDF viewer */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
 .parent {
   position: relative;
   width: 100%;
