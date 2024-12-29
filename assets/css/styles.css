@@ -333,6 +333,11 @@ main, .experience, .education, .education_c, .experience_c, .heading{
     border-bottom: #c7c7c7 1px solid;
 }
 
+/* Remove border-bottom for .heading on the resume page */
+.resume-page .heading {
+    border-bottom: none;
+}
+
 .skills {
     /* border-bottom: none;  Remove this line or set to none */
     padding: 20px 30px;
