@@ -1,0 +1,734 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+  position: relative; /* Establish a stacking context for child elements */
+}
+
+.bio {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  gap: 20px; /* Add space between paragraphs and buttons */
+}
+
+.bio iframe {
+    width: 100%; /* Full width inside container */
+    max-width: 800px; /* Optional: Limit maximum width */
+    height: 600px; /* Height of the embedded PDF viewer */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+.parent {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.parentvid {
+  position: relative;
+  width: 100%;
+  padding-bottom: 33.75%; /* This is 56.25% * 0.6 to maintain 16:9 ratio at 60% width */
+  margin: 20px 0;
+}
+
+.location-text {
+  font-size: 13px; /* Smaller font size than bio */
+  color: #3171AE; /* Subtle color */
+  margin-top: 10px;
+  margin-bottom: 0px; /* Space between text and icons */
+  line-height: 1.; /* Reduce line height */
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Special case for radio player */
+.parent:has(.radioframe) {
+  height: auto;
+  position: static;
+}
+
+.parentvid iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden {
+    display: none;
+}
+
+.button-wrapper {
+    text-align: left;
+}
+
+.toggle-btn {
+    background: none;
+    border: none;
+    color: #82853E;
+    cursor: pointer;
+    padding: 5px 0;
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.toggle-btn:hover {
+    color: #003366;
+}
+
+
+.frame {
+  width: 60%; /* Set width of the frame */
+  height: 60%;  /*  Set height of the frame */
+}
+
+.radioframe {
+  width: 60%;
+  height: 90px !important; /* Fixed height for audio player */
+  margin: 0 auto;
+  display: block;
+}
+
+.talk-image {
+  max-width: 60%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra inline spacing */
+  margin: 10px auto; /* Center the image and add spacing */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.talk-item {
+  margin-bottom: 30px; /* Add space between talks */
+}
+
+.talk-item p {
+  margin-top: 10px; /* Add spacing between the image and text */
+}
+
+.talk-item hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-top: 1px solid #ccc; /* Optional styling for horizontal rule */
+}
+
+.updates {
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+    min-width: 1024px;
+    /* border-top: 1px solid #c7c7c7; */
+}
+
+.updates h1 {
+    margin-bottom: 15px;
+    white-space: nowrap;
+    display: block;
+    padding: 20px 0 0 30px;
+    font-size: 26px; /* Match other section headings */
+}
+
+.updates ul {
+    list-style-position: outside;
+    padding-left: 50px;
+    margin: 0;
+    width: 100%; /* Match bio width */
+    min-width: 600px;
+}
+
+.updates li {
+    margin-bottom: 10px;
+    line-height: 1.4;
+    padding-right: 0;
+}
+
+
+body{
+    background-color: #f3f3f3;
+    font-family: 'Work Sans', sans-serif;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #191919;
+  color: #ffffff;
+}
+
+#theme-toggle {
+  position: fixed; /* Fix the button's position relative to the viewport */
+  bottom: 20px; /* Distance from the bottom of the page */
+  right: 20px; /* Distance from the right side of the page */
+  padding: 10px 20px;
+  background-color: #000000;
+  background: #000000; /* No background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#theme-toggle:hover {
+  background-color: #333333;
+  opacity: 0.8;
+}
+
+/* Header */
+
+.resume h2{
+    margin-bottom: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: #82853E;
+    font-size: 16px;
+}
+
+header{
+    margin-bottom: 40px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div p{
+    display: inline;
+}
+
+/* Navigation */
+
+nav a{
+    padding-left: 20px;
+}
+
+nav a:nth-child(-n+5){
+    padding-right: 20px;
+    border-right: #000 1px solid;
+}
+
+/*
+nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    padding: 10px 15px;
+    position: relative;
+}
+*/
+/* Remove the old border styling 
+nav a:nth-child(-n+5) {
+    border-right: 1px solid #000;
+}*/
+
+/* Add hover effect */
+nav a:hover {
+    color: #5F949F;
+}
+
+/* Active page indicator */
+nav a.active {
+    font-weight: bold;
+    color: #5F949F;
+}
+
+
+/* Main */
+
+main{
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom:  50px;
+}
+
+p, li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+}
+
+h1{
+    font-size: 22px;
+    display: inline;
+}
+
+h2{
+    font-size: 42px;
+}
+
+h3{
+    font-size: 26px;
+}
+
+h4{
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.content {
+  width: 60%; /* Consistent width */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 20px; /* Add some padding around the content */
+  font-family: 'Arial', sans-serif; /* Use consistent font */
+  line-height: 1.6; /* Improve readability */
+}
+
+.content h1, .content h2, .content h3 {
+  margin-bottom: 20px;
+}
+
+.content p {
+  margin-bottom: 15px;
+}
+
+.photo, .newsphoto{
+    width: 350px;
+    height: 350px;
+    min-width: 350px; /* Prevent shrinking below this width */
+    min-height: 350px; /* Prevent shrinking below this height */
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.photo{
+    background-image: url(../images/babak-ehteshami-bejnordi-photo.jpg);
+}
+.newsphoto{
+    background-image: url(../images/news.svg);
+}
+
+.heading{
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-bottom: 40px;
+    min-width: 1024px;
+}
+
+.heading div:last-child{
+    width: 60%;
+    min-width: 500px;
+}
+
+/* Resume section */
+
+main, .experience, .education, .education_c, .experience_c, .heading{
+    border-bottom: #c7c7c7 1px solid;
+}
+
+/* Remove border-bottom for .heading on the resume page */
+.resume-page .heading {
+    border-bottom: none;
+}
+
+.skills {
+    /* border-bottom: none;  Remove this line or set to none */
+    padding: 20px 30px;
+    border-top: 1px solid #c7c7c7; /* Add separator line */
+    width: 70%; /* Match bio width */
+    min-width: 700px; /* Prevent shrinking below this width */
+    margin: 0 auto; /* Center the section */
+    font-size: 16px;
+}
+
+.skills h1 {
+    margin-bottom: 15px;
+    white-space: nowrap; /* Prevent heading from wrapping */
+    margin-left: 0; /* Align heading with left edge */
+    display: block;
+    width: 100%;
+}
+
+.skills ul {
+    list-style-position: outside; /* Keep bullets aligned */
+    padding-left: 20px; /* Space for bullets */
+    margin: 0;
+    margin-left: 0; /* Align heading with left edge */
+    margin-top: 10px;
+    clear: both; /* Ensure list starts on new line */
+    width: 75%; /* Control list width */
+}
+
+.skills li {
+    margin-bottom: 10px; /* Space between list items */
+    line-height: 1.2; /* Improve readability */
+    padding-left: 10px; /* Add some space between bullet and text */
+    text-indent: -5px; /* Pull the text back slightly for better alignment */
+    padding-right: 20px; /* Add some space on the right */
+}
+
+/* Wrapper for Education and Experience sections */
+.resume-sections {
+    display: flex; /* Enable flexbox for side-by-side layout */
+    justify-content: space-between; /* Add space between columns */
+    gap: 20px; /* Optional: Add spacing between columns */
+}
+
+/* Style for individual columns */
+.education_c, .experience_c {
+    flex: 1; /* Ensure both columns take equal width */
+    padding: 20px; /* Add padding inside each column */
+}
+
+.heading, .experience, .information, .education, .education-column, .skills, .projects-list{
+    display: flex;
+}
+
+.experience, .education{
+    padding: 50px 30px;
+}
+
+.experience, .information, .education, .skills{
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.information{
+    width: 500px;
+    margin-bottom: 20px;
+}
+
+.paragraph{
+    width: 300px;
+}
+
+.education-column{
+    flex-direction: column;
+}
+
+/* Grouping Buttons */
+.button-group {
+  display: flex; /* Arrange buttons in a row */
+  justify-content: flex-start; /* Center align the buttons */
+  gap: 5px; /* Add spacing between buttons */
+  margin-top: 1px; /* Add space above the button group */
+  padding-left: 0; /* Ensure no left padding */
+  width: 100%; /* Match parent width */
+}
+
+.button-group a {
+  display: inline-block; /* Ensure each button behaves like a block element */
+}
+
+.social-button {
+  height: 40px;
+  width: 40px; /* Set fixed width for icons */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0; /* Remove padding */
+}
+
+.social-button img.icon {
+  max-height: 40px; /* Icon image height matches button height */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure icon fits properly */
+}
+
+/* Hover Effects for All Buttons */
+.social-button:hover,
+.cv-button:hover {
+  opacity: 0.9; /* Slight transparency on hover */
+}
+
+/* Optional Styling for CV Button (Custom Appearance) */
+.cv-button {
+  border: none;
+  font-weight: bold;
+}
+
+.cv-button {
+  background-color: #5F949F; /* Black for CV button */
+  color: white;
+  border-radius: 5px;
+  padding: 0 15px; /* Add horizontal padding only for the CV button */
+  height: 40px;
+  line-height: 40px;
+}
+
+/* Icon fonts */
+
+[class^="icon-"]{
+    font-size: 40px;
+    color: rgb(68, 68, 68);
+}
+
+[class^="icon-github-square"]{
+    font-size: 47px;
+    position: relative;
+    bottom: 3px;
+}
+
+.icon-download:hover{
+    color: rgb(195, 6, 6);
+}
+
+[class^="icon-download"]{
+    
+    color: rgb(0, 0, 0);
+    font-size: 26px;
+}
+
+/* Projects section */
+
+.projects{
+    padding-top: 50px;
+}
+
+.projects-list{
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.funiro{
+    background-image: url(../images/funiro.png);
+}
+
+.bislite{
+    background-image: url(../images/bislite-free-html5-templates.jpg);
+}
+
+.adaptive_page{
+    background-image: url(../images/adaptive_page.jpg);
+}
+
+.projects-list a{
+    width: 500px;
+    height: 340px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 30px;
+    position: relative;
+    transition: all 1s ease;
+}
+
+.projects-list a:hover{
+    transform: scale(1.1);
+}
+
+a span{
+    display: block;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    color: #2e2e2e;
+    border-radius: 0 0 15px 15px;
+    background: rgb(50, 50, 50);
+    background: linear-gradient(0deg, rgba(50,50,50,1) 0%, rgba(123,123,122,1) 42%, rgb(182, 182, 182) 100%);
+}
+
+
+.footer {
+  color: #333; /* Dark text for readability */
+  text-align: center;
+  padding: 1rem;
+  font-size: 8px;
+}
+
+.footer a {
+  color: #5F949F; /* Blue link color */
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.footer a:hover {
+  text-decoration: underline; /* Underline on hover for better UX */
+}
+
+@media screen and (max-width: 1024px){
+    .photo{
+        width: 350px;
+        height: 350px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+  .talk-item {
+    margin-bottom: 20px; /* Reduce spacing slightly on smaller screens */
+    text-align: center; /* Center-align content for better readability */
+  }
+
+  .radioframe,
+  .frame {
+    width: 100%; /* Full width on smaller screens */
+    height: auto; /* Allow flexible height */
+    min-height: 150px; /* Set a minimum height for visibility */
+    margin-bottom: 20px;
+  }
+
+  .talk-image {
+    max-width: 90%; /* Slightly smaller images on mobile devices */
+    margin-bottom: 15px;
+    border-radius: 5px;
+  }
+
+  .updates {
+        width: 90%; /* Match heading width */
+        min-width: unset; /* Remove min-width constraint */
+        padding: 20px;
+  }
+
+  .updates h1 {
+        padding: 10px 0;
+        font-size: 22px;
+        white-space: normal; /* Allow text to wrap */ 
+  }
+    
+  .updates ul {
+        width: 100%; /* Full width on mobile */
+        min-width: unset;
+        padding-left: 20px;
+  }
+    
+  .updates li {
+        margin-bottom: 15px;
+  }
+
+  .footer {
+    font-size: 0.5rem; /* Slightly smaller text on smaller screens */
+    padding: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+
+    /* Header */
+
+    header{
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 10px;
+    }
+    h1{
+        display: block;
+    }
+
+    header div{
+        margin-bottom: 15px;
+    }
+
+    /* Navigatiom */
+
+    nav a{
+        font-size: 14px;
+    }
+
+    /* Maim */
+    .frame {
+      width: 100%; /* Set width of the frame */
+      height: auto;  /*  Set height of the frame */
+    }
+
+    .updates {
+        width: 95%; /* Slightly wider on very small screens */
+        padding: 15px;
+    }
+    
+    .talk-image {
+      max-width: 100%; /* Ensure the image does not exceed its container's width */
+      height: auto; /* Maintain the aspect ratio */
+      display: block; /* Remove any extra inline spacing */
+      margin: 1px auto; /* Center the image and add spacing */
+      border-radius: 5px; /* Optional: Add rounded corners */
+    }
+    .photo{
+        margin-bottom: 30px;
+        width: 350px;
+        height: 350px;
+    }
+
+    .heading{
+        flex-direction: column;
+        padding-bottom: 10px;
+    }
+
+    .heading div:last-child{
+        width: 300px;
+        text-align: left;
+    }
+
+    .heading div h2{
+        font-size: 30px;
+    }
+
+    /* Resume */
+
+    .resume h2{
+        text-align: left;
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .icon-download{
+        font-size: 15px;
+    }
+
+    .experience_c, .education_c{
+        display: none;
+    }
+
+    .cv-button {
+    font-size: 14px; /* Reduce font size on smaller screens */
+    padding: 5px; /* Adjust padding for smaller buttons */
+    min-width: unset; /* Allow flexible resizing if needed */
+    width: fit-content; /* Ensure it still adjusts dynamically */
+    height: auto; /* Allow flexible height if necessary */
+    line-height: normal; /* Reset line-height for better readability */
+    white-space: nowrap; /* Ensure no wrapping occurs */
+    }
+    
+    .resume{
+        width: 100%;
+        min-width: 1024px; /* Match heading minimum width */
+        margin: 0 auto;
+        padding-bottom: 30px;
+        border-bottom: #c7c7c7 1px solid;
+        font-size: 16px;
+    }
+
+    .resume-sections {
+        flex-direction: column; /* Stack sections vertically on smaller screens */
+    }
+    /* Projects */
+
+    .projects h2{
+        text-align: center;
+    }
+
+    .projects-list a{
+        width: 300px;
+        height: 204px;
+    }
+
+    a span{
+        width: 300px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 15px;
+    }
+
+  .footer {
+    font-size: 0.5rem; /* Slightly smaller text on smaller screens */
+    padding: 0.8rem;
+  }
+    
+}

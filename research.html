@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/project_style.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <base target="_blank">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header>
+        <div>
+            <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
+            <h1>Babak Ehteshami Bejnordi</h1>
+            <p>Research Scientist @ Qualcomm AI Research</p>
+        </div>
+        <nav>
+	    <a href="https://babakint.github.io/" target="_self">Home</a>
+	    <a href="resume" target="_self">Resume</a>
+	    <a href="research.html" target="_self">Research</a>
+	    <a href="talks.html" target="_self">Talks</a>
+	</nav>
+    </header>
+    <main>
+	<div class="projects-section">
+	    <h1>Research Projects</h1>
+	    <div class="projects-container">
+	        <div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/moe_cache.png" alt="Project 1">
+	            </div>
+	            <div class="project-content">
+	                <h3>Cache-MoE</h3>
+			<div class="conference-subtitle">Expo Demo @NeurIPS'24</div>
+	                <p>Efficient Mixture-of-Experts for mobile devices with limited DRAM.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">MoE</span>
+	                    <span class="tech-tag">On-device</span>
+	                    <span class="tech-tag">Caching</span>
+			    <span class="tech-tag">LLM Efficiency</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://arxiv.org/pdf/2412.00099">Paper</a>
+	                    <a href="https://www.qualcomm.com/news/onq/2024/12/qualcomm-at-neurips-2024-ai-research-demos-papers">Demo</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/readme_moe.png" alt="Project 2">
+	            </div>
+	            <div class="project-content">
+	                <h3>Refactor LLM into MoE</h3>
+			<div class="conference-subtitle">Published @NeurIPS'24</div>
+	                <p>Refactorizing LLMs as router-decoupled mixture of experts with system co-design.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">MoE</span>
+	                    <span class="tech-tag">Batched-inference</span>
+	                    <span class="tech-tag">Dynamic sparsity</span>
+			    <span class="tech-tag">Decoupled routing</span>
+			    <span class="tech-tag">LLM Efficiency</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openreview.net/pdf?id=i8JaxY7tDI">Paper</a>
+	                    <a href="https://github.com/VITA-Group/READ-ME">Code</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/llm2slm.png" alt="Project 3">
+	            </div>
+	            <div class="project-content">
+	                <h3>LLM-to-SLM</h3>
+			<div class="conference-subtitle">Published @ICML'24: ES-FoMo II</div>
+	                <p>Think Big, Generate Quick: LLM-to-SLM for fast autoregressive decoding.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Hybrid LLM</span>
+	                    <span class="tech-tag">Fast decoding</span>
+	                    <span class="tech-tag">LLM Efficiency</span>
+			    <span class="tech-tag">LLM to SLM</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://arxiv.org/pdf/2402.16844">Paper</a>
+	                    <a href="https://github.com/tosiyuki/LLM-to-SLM/tree/main">Code</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/interrogate.png" alt="Project 4">
+	            </div>
+	            <div class="project-content">
+	                <h3>InterroGate for MTL</h3>
+			<div class="conference-subtitle">Published @BMVC'24</div>
+	                <p>Learning to share, specialize, and prune representations for Multi-task Learning.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Multi-task Learning</span>
+			    <span class="tech-tag">Inference efficiency</span>
+			    <span class="tech-tag">Gated Networks</span>
+			    <span class="tech-tag">Channel sparsity</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://bmva-archive.org.uk/bmvc/2024/papers/Paper_54/paper.pdf">Paper</a>
+	                    <a href="https://bmvc2024.org/proceedings/54/">Presentation</a>
+	                </div>
+	            </div>
+	        </div>
+	        <div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/pbt.png" alt="Project 5">
+	            </div>
+	            <div class="project-content">
+	                <h3>Scalarization for MTL</h3>
+			<div class="conference-subtitle">Published @NeurIPS'23</div>
+	                <p>Scalarization for Multi-Task and Multi-Domain Learning at scale.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Population-based Training</span>
+			    <span class="tech-tag">Scalarization</span>
+			    <span class="tech-tag">Multi-Task Learning</span>
+	                    <span class="tech-tag">Multi-Domain Learning</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/368559ed8ede03b21f624feaeb3a5867-Paper-Conference.pdf">Paper</a>
+	                    <a href="https://neurips.cc/virtual/2023/poster/71557">Presentation</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/msvit.png" alt="Project 6">
+	            </div>
+	            <div class="project-content">
+	                <h3>MSViT</h3>
+			<div class="conference-subtitle">Published @ICCV'23: NIVT</div>
+	                <p>Dynamic mixed-scale tokenization for vision transformers.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Conditional compute</span>
+	                    <span class="tech-tag">Mixed-scale</span>
+			    <span class="tech-tag">Efficient CV</span>
+	                    <span class="tech-tag">Tokenization</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openaccess.thecvf.com/content/ICCV2023W/NIVT/papers/Havtorn_MSViT_Dynamic_Mixed-Scale_Tokenization_for_Vision_Transformers_ICCVW_2023_paper.pdf">Paper</a>
+	                    <a href="https://github.com/Qualcomm-AI-research/batchshaping">Code</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/salisa.png" alt="Project 7">
+	            </div>
+	            <div class="project-content">
+	                <h3>Salisa</h3>
+			<div class="conference-subtitle">Published @ECCV'22</div>
+	                <p>Saliency-based input sampling for efficient video object detection.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Efficient Inference</span>
+			    <span class="tech-tag">VOD</span>
+	                    <span class="tech-tag">Video Object Detection</span>
+			    <span class="tech-tag">Spatial Transformer Network</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700296.pdf">Paper</a>
+	                    <a href="https://www.ecva.net/papers/eccv_2022/papers_ECCV/papers/136700296-supp.pdf">Appendix</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/sgmoe.png" alt="Project 8">
+	            </div>
+	            <div class="project-content">
+	                <h3>Single-gated MoE</h3>
+			<div class="conference-subtitle">Published @BMVC'22</div>
+	                <p>Single-gate Mixture of Experts (MoE) with early exiting for convolutional architectures.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">MoE</span>
+	                    <span class="tech-tag">Anytime Inference</span>
+			    <span class="tech-tag">On-device</span>
+			    <span class="tech-tag">Early-exiting</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://bmvc2022.mpi-inf.mpg.de/0736.pdf">Paper</a>
+	                    <a href="https://bmvc2022.mpi-inf.mpg.de/736/">Presentation</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/frameexit.png" alt="Project 9">
+	            </div>
+	            <div class="project-content">
+	                <h3>FrameExit</h3>
+			<div class="conference-subtitle">Published @CVPR'21 (Oral)</div>
+	                <p>Conditional Early Exiting for Efficient Video Recognition.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Early Exiting</span>
+	                    <span class="tech-tag">Video Recognition</span>
+			    <span class="tech-tag">Gating Network</span>
+			    <span class="tech-tag">Efficient Recognition</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Ghodrati_FrameExit_Conditional_Early_Exiting_for_Efficient_Video_Recognition_CVPR_2021_paper.pdf">Paper</a>
+	                    <a href="https://github.com/Qualcomm-AI-research/FrameExit">Code</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/skipconv.png" alt="Project 10">
+	            </div>
+	            <div class="project-content">
+	                <h3>SkipConv</h3>
+			<div class="conference-subtitle">Published @CVPR'21</div>
+	                <p>Skip-Convolutions for efficient video processing.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Residual Convolutions</span>
+	                    <span class="tech-tag">Efficient Video Processing</span>
+			    <span class="tech-tag">Skip-Convolution</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openaccess.thecvf.com/content/CVPR2021/papers/Habibian_Skip-Convolutions_for_Efficient_Video_Processing_CVPR_2021_paper.pdf">Paper</a>
+	                    <a href="https://github.com/Qualcomm-AI-research/Skip-Conv">Code</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/cl_gate.png" alt="Project 11">
+	            </div>
+	            <div class="project-content">
+	                <h3>Channel Gating for Continual Learning</h3>
+			<div class="conference-subtitle">Published @CVPR'20 (Oral)</div>
+	                <p>Conditional channel gated networks for task-aware continual learning.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Continual Learning</span>
+	                    <span class="tech-tag">Chanel-Gating</span>
+			    <span class="tech-tag">Task-aware</span>
+			    <span class="tech-tag">Dynamic sparsity</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Abati_Conditional_Channel_Gated_Networks_for_Task-Aware_Continual_Learning_CVPR_2020_paper.pdf">Paper</a>
+	                    <a href="https://www.youtube.com/watch?v=Qp2g-CzlxjQ&ab_channel=ComputerVisionFoundationVideos">Presentation</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/bas.png" alt="Project 12">
+	            </div>
+	            <div class="project-content">
+	                <h3>Channel Gating with Batch-shaping</h3>
+			<div class="conference-subtitle">Published @ICLR'20</div>
+	                <p>Batch-shaping for learning conditional channel gated networks.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Batch-shaping</span>
+	                    <span class="tech-tag">Channel Gating</span>
+			    <span class="tech-tag">Dynamic sparsity</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openreview.net/pdf?id=Bke89JBtvB">Paper</a>
+	                    <a href="https://github.com/Qualcomm-AI-research/batchshaping">Code</a>
+	                </div>
+	            </div>
+	        </div>
+	        <!-- Add more project-card divs following the same structure -->
+	    </div>
+	</div>
+
+    </main>
+  <footer class="footer">
+    <p>© 2025 Babak Ehteshami Bejnordi | Website design adapted from 
+      <a href="https://github.com/Maeevee/MyPortfolio" target="_blank" rel="noopener noreferrer">Maeevee</a>, under MIT license.
+    </p>
+  </footer>
+
+  <!-- Link to the JavaScript file -->
+  <script src="assets/scripts/script.js"></script>
+</body>
+</html>
