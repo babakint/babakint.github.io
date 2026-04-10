@@ -930,9 +930,10 @@ a span{
 }
 
 .research-strip-header h3 {
-    font-size: 22px;
-    font-weight: 700;
-    color: var(--color-name-display, #011D4D);
+    font-size: 26px;           /* matches .updates h1 at 26px */
+    font-weight: 600;          /* matches the heading weight */
+    color: inherit;            /* inherits body text color — works in both modes */
+    margin-bottom: 0;
 }
 
 .research-strip-link {
