@@ -3,23 +3,23 @@
     --bg-color: #f3f3f3;
     --text-color: #333333;
     --accent-color: #212121;
-    --tech-tag-color: #838548;
+    --tech-tag-color: #63372C;
     --divider-color: rgba(0, 0, 0, 0.2);
-    --card-bg: #DDDDDD;
+    --card-bg: #E4DFDA;
     --card-text-color: #333333;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* Dark mode variables */
 body.dark-mode {
-    --bg-color: #191919;
-    --text-color: #ffffff;
-    --accent-color: #A7A7A7;
-    --tech-tag-color: #838548;
-    --divider-color: rgba(255, 255, 255, 0.2);
-    --card-bg: #363636;
-    --card-text-color: #DBDBDB;
-    --card-shadow: rgba(0, 0, 0, 0.3);
+    --bg-color: #f3f3f3;
+    --text-color: #333333;
+    --accent-color: #212121;
+    --tech-tag-color: #034078;
+    --divider-color: rgba(0, 0, 0, 0.2);
+    --card-bg: #E4DFDA;
+    --card-text-color: #333333;
+    --card-shadow: rgba(0, 0, 0, 0.1);
 }
 
 /* Apply variables to elements */
@@ -123,6 +123,7 @@ body {
     display: flex;
     gap: 1rem;
 }
+
 
 .project-links a {
     padding: 0.5rem 1rem;

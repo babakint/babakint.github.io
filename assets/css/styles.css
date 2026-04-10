@@ -1,4 +1,62 @@
 
+:root {
+  /* --- Raw palette colors --- */
+  --color-navy-deep:   #061828;  /* darkest navy — dark mode bg, toggle btn  */
+  --color-navy-mid:    #034078;  /* mid slate blue — links, accents, buttons */
+  --color-slate-grey:  #B0B4BF;  /* cool grey — dividers and borders         */
+  --color-cream:       #f2f7f9;  /* warm cream — light mode page background  */
+  --color-peach:       #FCBF9C;  /* soft peach — available for highlights    */
+  --color-name-display: #011539; /* dark blue for name display in header */
+
+  /* --- Semantic roles (maps palette to purpose) ---
+     Change these to reassign roles without touching the rest of the file. */
+  --bg-page:           var(--color-cream);
+  --bg-dark:           var(--color-navy-deep);
+  --text-dark-mode:    var(--color-cream);
+  --color-link:        var(--color-navy-mid);
+  --color-link-hover:  var(--color-navy-deep);
+  --color-accent:      var(--color-navy-mid);
+  --color-accent-hover:var(--color-navy-deep);
+  --color-border:      var(--color-slate-grey);
+  --color-location:    var(--color-navy-mid);
+  --toggle-bg:         var(--color-navy-deep);
+  --toggle-bg-hover:   var(--color-navy-mid);
+  --text-footer:       var(--color-navy-deep);
+  --color-navbar:      var(--color-navy-mid);
+  --color-name-display: var(--color-name-display);
+
+
+    /* --- Typography --- */
+  --font-body: 'Manrope', sans-serif;
+  --font-heading: 'Manrope', sans-serif;
+  --font-weight-heading: 400; 
+  --font-weight-body:    300;
+  --font-weight-heading: 600;
+  --font-size-body:      17px;
+}
+
+
+/* Was: font-family: 'Work Sans', sans-serif; */
+body {
+    background-color: var(--bg-page);
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+}
+
+/* Was: font-family: 'Montserrat', sans-serif; font-size: 16px */
+p, li {
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    line-height: 1.7;  /* slightly more breathing room for dense text */
+}
+
+/* Was: font-family: 'Montserrat', sans-serif */
+.location-text {
+    font-family: var(--font-body);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -10,8 +68,56 @@ html {
 }
 
 header {
-  position: relative; /* Establish a stacking context for child elements */
+    position: sticky;       /* stays at top when scrolling */
+    top: 0;
+    z-index: 100;           /* floats above page content */
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 0 40px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-navy-mid);   /* Twilight Harmony blue */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* Name and subtitle inside the navbar */
+header div h1 {
+    color: #ffffff;
+    font-size: 18px;
+    display: inline;
+}
+
+header div p {
+    display: inline;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 14px;
+    margin-left: 12px;
+}
+
+/* Nav links on the blue bar */
+nav a {
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 17px;
+}
+
+nav a:nth-child(-n+5) {
+    padding-right: 20px;
+    border-right: rgba(255, 255, 255, 0.25) 1px solid;
+}
+
+
+nav a:hover {
+    color: #ffffff;          /* bright white — maximum contrast on the blue bar */
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #ffffff;
+}
+
 
 .bio {
   display: flex;
@@ -41,7 +147,7 @@ header {
 
 .location-text {
   font-size: 13px; /* Smaller font size than bio */
-  color: #3171AE; /* Subtle color */
+  color: var(--color-navy-mid); /* Subtle color */
   margin-top: 10px;
   margin-bottom: 0px; /* Space between text and icons */
   line-height: 1.; /* Reduce line height */
@@ -75,7 +181,7 @@ header {
 .toggle-btn {
     background: none;
     border: none;
-    color: #82853E;
+    color: var(--color-navy-mid);
     cursor: pointer;
     padding: 5px 0;
     font-size: 1em;
@@ -83,7 +189,7 @@ header {
 }
 
 .toggle-btn:hover {
-    color: #003366;
+    color: var(--color-navy-deep);
 }
 
 
@@ -156,14 +262,47 @@ header {
 
 
 body{
-    background-color: #f3f3f3;
+    background-color: var(--bg-page);
     font-family: 'Work Sans', sans-serif;
 }
 
 /* Dark Mode */
 body.dark-mode {
-  background-color: #191919;
-  color: #ffffff;
+  background-color: var(--color-navy-deep);
+  color: var(--color-cream);
+
+    --color-link:        #7eb8c9;   /* light steel blue — readable on dark bg */
+    --color-link-hover:  #aed8e6;   /* even lighter on hover */
+    --color-accent:      #7eb8c9;
+    --color-accent-hover:#aed8e6;
+    --color-location:    #7eb8c9;
+}
+
+
+/* Show more button in dark mode */
+body.dark-mode .toggle-btn {
+    color: #7eb8c9;   /* same light blue as your dark mode links */
+}
+
+body.dark-mode .toggle-btn:hover {
+    color: #aed8e6;
+}
+
+/* Location text in dark mode */
+body.dark-mode .location-text {
+    color: #7eb8c9;
+}
+
+body.dark-mode .footer {
+    color: var(--text-dark-mode);  /* warm cream #FEEBD2 */
+}
+
+body.dark-mode .footer a {
+    color: #7eb8c9;   /* same light blue as all other dark mode links */
+}
+
+body.dark-mode .footer a:hover {
+    color: #aed8e6;
 }
 
 #theme-toggle {
@@ -179,7 +318,7 @@ body.dark-mode {
 }
 
 #theme-toggle:hover {
-  background-color: #333333;
+  background-color: var(--color-navy-mid);
   opacity: 0.8;
 }
 
@@ -191,7 +330,7 @@ body.dark-mode {
 
 a{
     text-decoration: none;
-    color: #82853E;
+    color: var(--color-navy-mid);
     font-size: 16px;
 }
 
@@ -235,15 +374,11 @@ nav a:nth-child(-n+5) {
     border-right: 1px solid #000;
 }*/
 
-/* Add hover effect */
-nav a:hover {
-    color: #5F949F;
-}
 
 /* Active page indicator */
 nav a.active {
     font-weight: bold;
-    color: #5F949F;
+    color: var(--color-navy-mid);
 }
 
 
@@ -253,6 +388,7 @@ main{
     width: 90%;
     margin: 0 auto;
     padding-bottom:  50px;
+    padding-top: 48px;
 }
 
 p, li{
@@ -330,7 +466,7 @@ h4{
 /* Resume section */
 
 main, .experience, .education, .education_c, .experience_c, .heading{
-    border-bottom: #c7c7c7 1px solid;
+    border-bottom: var(--color-slate-grey) 1px solid;
 }
 
 /* Remove border-bottom for .heading on the resume page */
@@ -341,7 +477,7 @@ main, .experience, .education, .education_c, .experience_c, .heading{
 .skills {
     /* border-bottom: none;  Remove this line or set to none */
     padding: 20px 30px;
-    border-top: 1px solid #c7c7c7; /* Add separator line */
+    border-top: 1px solid var(--color-slate-grey); /* Add separator line */
     width: 70%; /* Match bio width */
     min-width: 700px; /* Prevent shrinking below this width */
     margin: 0 auto; /* Center the section */
@@ -455,7 +591,7 @@ main, .experience, .education, .education_c, .experience_c, .heading{
 }
 
 .cv-button {
-  background-color: #5F949F; /* Black for CV button */
+  background-color: var(--color-navy-mid); /* Black for CV button */
   color: white;
   border-radius: 5px;
   padding: 0 15px; /* Add horizontal padding only for the CV button */
@@ -523,6 +659,13 @@ main, .experience, .education, .education_c, .experience_c, .heading{
     transform: scale(1.1);
 }
 
+a {
+    text-decoration: none;
+    color: var(--color-link);
+    font-size: 16px;
+    font-weight: 500;  /* ← add this */
+}
+
 a span{
     display: block;
     width: 500px;
@@ -537,14 +680,14 @@ a span{
 
 
 .footer {
-  color: #333; /* Dark text for readability */
+  color: var(--color-navy-deep); /* Dark text for readability */
   text-align: center;
   padding: 1rem;
   font-size: 8px;
 }
 
 .footer a {
-  color: #5F949F; /* Blue link color */
+  color: var(--color-navy-mid); /* Blue link color */
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -666,9 +809,13 @@ a span{
         text-align: left;
     }
 
-    .heading div h2{
-        font-size: 30px;
+    .heading > div > h2 {
+        font-size: 52px !important;
+        font-weight: 700;
+        color: var(--color-name-display);
+        line-height: 1.1;
     }
+
 
     /* Resume */
 
@@ -701,7 +848,7 @@ a span{
         min-width: 1024px; /* Match heading minimum width */
         margin: 0 auto;
         padding-bottom: 30px;
-        border-bottom: #c7c7c7 1px solid;
+        border-bottom: var(--color-slate-grey) 1px solid;
         font-size: 16px;
     }
 
@@ -731,4 +878,151 @@ a span{
     padding: 0.8rem;
   }
     
+}
+
+
+/* ===== LATEST RESEARCH STRIP ===== */
+
+.research-strip {
+    width: 70%;
+    min-width: 1024px;
+    margin: 0 auto 60px auto;
+    padding-top: 40px;
+    border-top: 1px solid var(--color-border);
+}
+
+.research-strip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 20px;
+    padding: 0 4px;
+}
+
+.research-strip-header h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-name-display, #011D4D);
+}
+
+.research-strip-link {
+    font-size: 14px;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.research-strip-link:hover {
+    text-decoration: underline;
+}
+
+/* Horizontal scrollable row */
+.research-strip-scroll {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 12px;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Hide scrollbar but keep scroll functionality */
+.research-strip-scroll::-webkit-scrollbar { height: 4px; }
+.research-strip-scroll::-webkit-scrollbar-track { background: transparent; }
+.research-strip-scroll::-webkit-scrollbar-thumb {
+    background: var(--color-border);
+    border-radius: var(--radius-full, 9999px);
+}
+
+/* Individual cards */
+.research-strip-card {
+    flex: 0 0 260px;            /* fixed width, won't shrink */
+    scroll-snap-align: start;
+    background: #ffffff;
+    border: 1px solid var(--color-border);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.research-strip-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.10);
+}
+
+.research-strip-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    display: block;
+}
+
+.research-strip-card-body {
+    padding: 14px 16px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    flex: 1;
+}
+
+.research-strip-venue {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--color-accent);
+}
+
+.research-strip-card-body h4 {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--color-name-display, #304261);
+    margin: 0;
+    line-height: 1.3;
+}
+
+.research-strip-card-body p {
+    font-size: 13px;
+    color: #555;
+    line-height: 1.5;
+    margin: 0;
+    flex: 1;
+}
+
+.research-strip-paper-link {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--color-accent);
+    text-decoration: none;
+    margin-top: 4px;
+}
+
+.research-strip-paper-link:hover {
+    text-decoration: underline;
+}
+
+/* Dark mode support */
+body.dark-mode .research-strip-card {
+    background: #E4DFDA;
+    border-color: rgba(255,255,255,0.1);
+}
+
+body.dark-mode .research-strip-card-body p {
+    color: rgba(1, 0, 11, 0.65);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .research-strip {
+        width: 90%;
+        min-width: unset;
+        padding: 30px 10px 0;
+    }
+    .research-strip-card {
+        flex: 0 0 220px;
+    }
 }

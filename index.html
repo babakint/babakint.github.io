@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;550;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -21,8 +21,8 @@
             <p>Research Scientist @ Qualcomm AI Research</p>
         </div>
         <nav>
-	    <a href="https://babakint.github.io/" target="_self">Home</a>
-	    <a href="resume" target="_self">Resume</a>
+	    <a href="index.html" target="_self">Home</a>
+	    <a href="resume.html" target="_self">Resume</a>
 	    <a href="research.html" target="_self">Research</a>
 	    <a href="talks.html" target="_self">Talks</a>
 	</nav>
@@ -34,7 +34,9 @@
                 <h2>Babak Ehteshami Bejnordi</h2>
                     <p>I am a research scientist at <a href="https://www.qualcomm.com/invention/research/locations/amsterdam">Qualcomm AI Research</a> (Senior Staff and Manager). My primary research focus lies in the realm of efficient Deep Learning for Large Language Models (LLMs) and Computer Vision. My recent research works have been in the areas of Efficient LLM deployment, Efficient (Latent) Reasoning, Mixture of Experts, Multi-Task Learning, and Continual Learning. I am leading a team on Conditional Computation for efficient deep learning at Qualcomm AI Research, Amsterdam.</p>
                     <p>I have been the organizer of the <a href="https://www.qualcomm.com/invention/research/university-relations/innovation-fellowship/2023-europe">Qualcomm Innovation Fellowship</a> Program in Europe since 2019. </p>
-                    <p> I obtained my PhD at the <a href ="http://diagnijmegen.nl/index.php/Home" rel="nofollow"> Diagnostic Image Analysis Group</a>, Radboud University, the Netherlands, where I worked on the development of ML algorithms for breast cancer diagnostics. During my PhD, I also organized the <a href="https://camelyon16.grand-challenge.org/">CAMELYON16</a> challenge. From Jun to Nov 2016, I was a visiting researcher at <a href ="https://becklab.hms.harvard.edu/" rel="nofollow"> Harvard University</a>.</p>
+                    <p>I obtained my PhD at the <a href ="http://diagnijmegen.nl/index.php/Home" rel="nofollow"> Diagnostic Image Analysis Group</a>, Radboud University, the Netherlands, where I worked on the development of ML algorithms for breast cancer diagnostics. During my PhD, I also organized the <a href="https://camelyon16.grand-challenge.org/">CAMELYON16</a> challenge.</p> 
+                    <p>From Jun to Nov 2016, I was a visiting researcher at <a href ="https://becklab.hms.harvard.edu/" rel="nofollow"> Harvard University</a>, where I worked on applying deep learning to computational pathology, 
+                    with a focus on tumor-associated stroma as a prognostic biomarker in breast cancer, in collaboration with researchers from Harvard, NIH, and Mayo Clinic.</p>
 	      
 	      <p class="location-text">Qualcomm AI Research, Amsterdam, The Netherlands</p>
               <div class="button-group">
@@ -57,6 +59,8 @@
             
             </div>
         </div>
+
+
        <div id="updates" class="updates">
 		<h1 id="research-updates">Research updates:</h1>
                 <ul>
@@ -94,9 +98,89 @@
 		</ul>
 		<button id="toggle-button" class="toggle-btn">Show more</button>
         </div>
+
+                <!-- ===== LATEST RESEARCH STRIP ===== -->
+        <section class="research-strip">
+            <div class="research-strip-header">
+                <h3>Latest Research</h3>
+                <a href="research.html" target="_self" class="research-strip-link">View all →</a>
+            </div>
+            <div class="research-strip-scroll">
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/reasoning.jpeg" alt="kava" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">Qualcomm Tech Report'26</span>
+                        <h4>Reasoning on the Edge</h4>
+                        <p>Reasoning in small LLMs using LoRA adapters, combined with supervised fine-tuning and RL-based Budget forcing.</p>
+                        <a href="https://arxiv.org/pdf/2603.16867" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/kava.png" alt="kava" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">ICLR'26</span>
+                        <h4>Latent Reasoning</h4>
+                        <p>Distilling knowledge from a compressed KV-cache of a teacher into a latent-reasoning student.</p>
+                        <a href="https://openreview.net/forum?id=ePrhcLbtGv" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/moe_cache.png" alt="Cache-MoE" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">TMLR'25</span>
+                        <h4>Cache-MoE</h4>
+                        <p>Efficient Mixture-of-Experts for mobile devices with limited DRAM.</p>
+                        <a href="https://arxiv.org/pdf/2412.00099" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/readme_moe.png" alt="Refactor LLM into MoE" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">NeurIPS '24</span>
+                        <h4>Refactor LLM into MoE</h4>
+                        <p>Refactorizing LLMs as router-decoupled mixture of experts with system co-design.</p>
+                        <a href="https://openreview.net/pdf?id=i8JaxY7tDI" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/llm2slm.png" alt="LLM-to-SLM" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">ICML '24</span>
+                        <h4>LLM-to-SLM</h4>
+                        <p>Think Big, Generate Quick: LLM-to-SLM for fast autoregressive decoding.</p>
+                        <a href="https://arxiv.org/pdf/2402.16844" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/pbt.png" alt="Scalarization for MTL" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">NeurIPS '23</span>
+                        <h4>Scalarization for MTL</h4>
+                        <p>Scalarization for Multi-Task and Multi-Domain Learning at scale.</p>
+                        <a href="https://proceedings.neurips.cc/paper_files/paper/2023/file/368559ed8ede03b21f624feaeb3a5867-Paper-Conference.pdf" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+                <div class="research-strip-card">
+                    <img src="assets/images/Project/interrogate.png" alt="InterroGate for MTL" loading="lazy">
+                    <div class="research-strip-card-body">
+                        <span class="research-strip-venue">BMVC '24</span>
+                        <h4>InterroGate for MTL</h4>
+                        <p>Learning to share, specialize, and prune representations for Multi-task Learning.</p>
+                        <a href="https://bmva-archive.org.uk/bmvc/2024/papers/Paper_54/paper.pdf" class="research-strip-paper-link">Paper →</a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- ===== END LATEST RESEARCH STRIP ===== -->
     </main>
   <footer class="footer">
-    <p>© 2025 Babak Ehteshami Bejnordi | Website design adapted from 
+    <p>© 2026 Babak Ehteshami Bejnordi | Website design adapted from 
       <a href="https://github.com/Maeevee/MyPortfolio" target="_blank" rel="noopener noreferrer">Maeevee</a>, under MIT license.
     </p>
   </footer>

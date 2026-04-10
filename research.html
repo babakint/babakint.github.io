@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Work+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"> -->
     <link rel="stylesheet" href="assets/css/normalize.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/project_style.css">
@@ -22,8 +23,8 @@
             <p>Research Scientist @ Qualcomm AI Research</p>
         </div>
         <nav>
-	    <a href="https://babakint.github.io/" target="_self">Home</a>
-	    <a href="resume" target="_self">Resume</a>
+	    <a href="index.html" target="_self">Home</a>
+	    <a href="resume.html" target="_self">Resume</a>
 	    <a href="research.html" target="_self">Research</a>
 	    <a href="talks.html" target="_self">Talks</a>
 	</nav>
@@ -32,14 +33,57 @@
 	<div class="projects-section">
 	    <h1>Research Projects</h1>
 	    <div class="projects-container">
-	        <div class="project-card">
+			<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/moe_cache.png" alt="Project 1">
+	                <img src="assets/images/Project/reasoning.jpeg" alt="kava">
+	            </div>
+	            <div class="project-content">
+	                <h3>Reasoning on the Edge</h3>
+			<div class="conference-subtitle">Qualcomm AI Research | Tech Report'26</div>
+	                <p>Reasoning in small LLMs using LoRA adapters, combined with supervised fine-tuning and RL-based Budget forcing.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">LoRA</span>
+	                    <span class="tech-tag">RL for budget forcing</span>
+						<span class="tech-tag">Chain-of-thought</span>
+						<span class="tech-tag">Model switching</span>
+						<span class="tech-tag">Reasoning</span>
+						<span class="tech-tag">On-device</span>
+						<span class="tech-tag">LLM Efficiency</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://arxiv.org/pdf/2603.16867">Paper</a>
+						<a href="https://qualcomm-ai-research.github.io/llm-reasoning-on-edge/">Project Page</a>
+	                </div>
+	            </div>
+	        </div>
+			<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/kava.png" alt="kava">
+	            </div>
+	            <div class="project-content">
+	                <h3>LATENT REASONING</h3>
+			<div class="conference-subtitle">Published @ICLR'26</div>
+	                <p>Distilling knowledge from a compressed KV-cache of a teacher into a latent-reasoning student.</p>
+	                <div class="tech-stack">
+	                    <span class="tech-tag">Latent Reasoning</span>
+	                    <span class="tech-tag">KV-cache</span>
+	                    <span class="tech-tag">KV-cache distillation</span>
+			    <span class="tech-tag">Chain-of-thought</span>
+			    <span class="tech-tag">LLM Efficiency</span>
+	                </div>
+	                <div class="project-links">
+	                    <a href="https://openreview.net/pdf?id=i8JaxY7tDI">Paper</a>
+	                </div>
+	            </div>
+	        </div>
+		<div class="project-card">
+	            <div class="project-image">
+	                <img src="assets/images/Project/moe_cache.png" alt="Cache-MoE">
 	            </div>
 	            <div class="project-content">
 	                <h3>Cache-MoE</h3>
 			<div class="conference-subtitle">Expo Demo @NeurIPS'24</div>
-	                <p>Efficient Mixture-of-Experts for mobile devices with limited DRAM.</p>
+	                <p>Efficient Mixture-of-Experts for mobile devices with limited DRAM via expert caching.</p>
 	                <div class="tech-stack">
 	                    <span class="tech-tag">MoE</span>
 	                    <span class="tech-tag">On-device</span>
@@ -54,7 +98,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/readme_moe.png" alt="Project 2">
+	                <img src="assets/images/Project/readme_moe.png" alt="READ-ME">
 	            </div>
 	            <div class="project-content">
 	                <h3>Refactor LLM into MoE</h3>
@@ -75,7 +119,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/llm2slm.png" alt="Project 3">
+	                <img src="assets/images/Project/llm2slm.png" alt="LLM-to-SLM">
 	            </div>
 	            <div class="project-content">
 	                <h3>LLM-to-SLM</h3>
@@ -95,7 +139,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/interrogate.png" alt="Project 4">
+	                <img src="assets/images/Project/interrogate.png" alt="InterroGate for MTL">
 	            </div>
 	            <div class="project-content">
 	                <h3>InterroGate for MTL</h3>
@@ -113,9 +157,9 @@
 	                </div>
 	            </div>
 	        </div>
-	        <div class="project-card">
+	    <div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/pbt.png" alt="Project 5">
+	                <img src="assets/images/Project/pbt.png" alt="pbt">
 	            </div>
 	            <div class="project-content">
 	                <h3>Scalarization for MTL</h3>
@@ -135,7 +179,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/msvit.png" alt="Project 6">
+	                <img src="assets/images/Project/msvit.png" alt="msvit">
 	            </div>
 	            <div class="project-content">
 	                <h3>MSViT</h3>
@@ -155,7 +199,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/salisa.png" alt="Project 7">
+	                <img src="assets/images/Project/salisa.png" alt="Salisa">
 	            </div>
 	            <div class="project-content">
 	                <h3>Salisa</h3>
@@ -175,7 +219,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/sgmoe.png" alt="Project 8">
+	                <img src="assets/images/Project/sgmoe.png" alt="Single-gated MoE">
 	            </div>
 	            <div class="project-content">
 	                <h3>Single-gated MoE</h3>
@@ -195,7 +239,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/frameexit.png" alt="Project 9">
+	                <img src="assets/images/Project/frameexit.png" alt="FrameExit">
 	            </div>
 	            <div class="project-content">
 	                <h3>FrameExit</h3>
@@ -215,7 +259,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/skipconv.png" alt="Project 10">
+	                <img src="assets/images/Project/skipconv.png" alt="SkipConv">
 	            </div>
 	            <div class="project-content">
 	                <h3>SkipConv</h3>
@@ -234,7 +278,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/cl_gate.png" alt="Project 11">
+	                <img src="assets/images/Project/cl_gate.png" alt="Channel Gating for Continual Learning">
 	            </div>
 	            <div class="project-content">
 	                <h3>Channel Gating for Continual Learning</h3>
@@ -254,7 +298,7 @@
 	        </div>
 		<div class="project-card">
 	            <div class="project-image">
-	                <img src="assets/images/Project/bas.png" alt="Project 12">
+	                <img src="assets/images/Project/bas.png" alt="Batch-shaping for Channel Gating">
 	            </div>
 	            <div class="project-content">
 	                <h3>Channel Gating with Batch-shaping</h3>
@@ -277,7 +321,7 @@
 
     </main>
   <footer class="footer">
-    <p>© 2025 Babak Ehteshami Bejnordi | Website design adapted from 
+    <p>© 2026 Babak Ehteshami Bejnordi | Website design adapted from 
       <a href="https://github.com/Maeevee/MyPortfolio" target="_blank" rel="noopener noreferrer">Maeevee</a>, under MIT license.
     </p>
   </footer>
