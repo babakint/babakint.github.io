@@ -67,19 +67,26 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 header {
-    position: sticky;       /* stays at top when scrolling */
+    position: sticky;
     top: 0;
-    z-index: 100;           /* floats above page content */
+    z-index: 100;
     width: 100%;
-    margin-bottom: 40px;
-    padding: 0 40px;
-    height: 64px;
+    margin-bottom: 0;
+    padding: 0 24px;
+    min-height: 64px;
+    height: auto;           /* ← allow height to grow on mobile */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--color-navy-mid);   /* Twilight Harmony blue */
+    flex-wrap: wrap;        /* ← lets name and nav wrap to second line if needed */
+    gap: 8px;
+    background-color: var(--color-navbar);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    padding-block: 10px;    /* vertical breathing room when wrapped */
 }
 
 /* Name and subtitle inside the navbar */
@@ -103,7 +110,7 @@ nav a {
     font-size: 17px;
 }
 
-nav a:nth-child(-n+5) {
+nav a:not(:last-child) {
     padding-right: 20px;
     border-right: rgba(255, 255, 255, 0.25) 1px solid;
 }
@@ -352,7 +359,7 @@ nav a{
     padding-left: 20px;
 }
 
-nav a:nth-child(-n+5){
+nav a:not(:last-child){
     padding-right: 20px;
     border-right: #000 1px solid;
 }
@@ -756,13 +763,22 @@ a span{
 
     /* Header */
 
-    header{
-        flex-direction: column;
-        text-align: left;
-        margin-bottom: 10px;
+    header {
+        flex-direction: column;   /* stack name above nav */
+        align-items: flex-start;
+        padding: 12px 16px;
+        gap: 6px;
     }
     h1{
         display: block;
+    }
+
+    header div h1 {
+        font-size: 15px;
+    }
+
+    header div p {
+        display: none;   /* hide subtitle on very small screens */
     }
 
     header div{
@@ -771,8 +787,22 @@ a span{
 
     /* Navigatiom */
 
-    nav a{
+    nav {
+        display: flex;
+        flex-wrap: wrap;          /* nav links wrap within the bar */
+        gap: 4px;
+        width: 100%;
+    }
+
+    nav a {
         font-size: 14px;
+        padding: 4px 10px;
+        border-right: none !important;   /* remove dividers on mobile */
+        padding-right: 10px;
+    }
+
+    nav a:not(:last-child) {
+        border-right: none;
     }
 
     /* Maim */

@@ -3,9 +3,9 @@
     --bg-color: #f3f3f3;
     --text-color: #333333;
     --accent-color: #212121;
-    --tech-tag-color: #63372C;
+    --tech-tag-color: #034078;
     --divider-color: rgba(0, 0, 0, 0.2);
-    --card-bg: #E4DFDA;
+    --card-bg: rgb(232, 231, 229);
     --card-text-color: #333333;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
@@ -17,7 +17,7 @@ body.dark-mode {
     --accent-color: #212121;
     --tech-tag-color: #034078;
     --divider-color: rgba(0, 0, 0, 0.2);
-    --card-bg: #E4DFDA;
+    --card-bg: rgb(232, 231, 229);
     --card-text-color: #333333;
     --card-shadow: rgba(0, 0, 0, 0.1);
 }
