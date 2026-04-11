@@ -26,12 +26,11 @@
   --color-name-display: var(--color-name-display);
 
 
-    /* --- Typography --- */
-  --font-body: 'Manrope', sans-serif;
-  --font-heading: 'Manrope', sans-serif;
-  --font-weight-heading: 400; 
-  --font-weight-body:    300;
+  /* --- Typography --- */
+  --font-body: 'Inter', sans-serif;
+  --font-heading: 'Inter', sans-serif;
   --font-weight-heading: 600;
+  --font-weight-body:    300;
   --font-size-body:      17px;
 }
 
@@ -105,14 +104,26 @@ header div p {
 
 /* Nav links on the blue bar */
 nav a {
-    padding-left: 20px;
+    padding: 6px 20px;
     color: rgba(255, 255, 255, 0.85);
     font-size: 17px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
 
+/* Individual tab colors from Blue Jungle palette */
+nav a:nth-child(1) { background-color: rgba(1, 29, 77, 0.5); }    /* Home:     #011D4D */
+nav a:nth-child(2) { background-color: rgba(3, 64, 120, 0.5); }   /* Resume:   #034078 */
+nav a:nth-child(3) { background-color: rgba(18, 130, 162, 0.5); }  /* Research: #1282A2 */
+nav a:nth-child(4) { background-color: rgba(99, 55, 44, 0.5); }    /* Talks:    #63372C */
+
+nav a:nth-child(1):hover { background-color: #011D4D; }
+nav a:nth-child(2):hover { background-color: #034078; }
+nav a:nth-child(3):hover { background-color: #1282A2; }
+nav a:nth-child(4):hover { background-color: #63372C; }
+
 nav a:not(:last-child) {
-    padding-right: 20px;
-    border-right: rgba(255, 255, 255, 0.25) 1px solid;
+    border-right: none;
 }
 
 
@@ -153,12 +164,12 @@ nav a.active {
 }
 
 .location-text {
-  font-size: 13px; /* Smaller font size than bio */
-  color: var(--color-navy-mid); /* Subtle color */
+  font-size: 13px;
+  color: var(--color-navy-mid);
   margin-top: 10px;
-  margin-bottom: 0px; /* Space between text and icons */
-  line-height: 1.; /* Reduce line height */
-  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0px;
+  line-height: 1.4;
+  font-family: var(--font-body);
 }
 
 /* Special case for radio player */
@@ -268,10 +279,7 @@ nav a.active {
 }
 
 
-body{
-    background-color: var(--bg-page);
-    font-family: 'Work Sans', sans-serif;
-}
+/* Duplicate body block removed — see :root above for font settings */
 
 /* Dark Mode */
 body.dark-mode {
@@ -355,14 +363,7 @@ header div p{
 
 /* Navigation */
 
-nav a{
-    padding-left: 20px;
-}
-
-nav a:not(:last-child){
-    padding-right: 20px;
-    border-right: #000 1px solid;
-}
+/* Duplicate nav rules removed — see styled nav tabs above */
 
 /*
 nav {
@@ -385,8 +386,24 @@ nav a:nth-child(-n+5) {
 /* Active page indicator */
 nav a.active {
     font-weight: bold;
-    color: var(--color-navy-mid);
+    color: #ffffff;
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.7);
+    text-underline-offset: 4px;
+    text-decoration-thickness: 2px;
 }
+
+/* Active tab gets full-opacity background */
+nav a:nth-child(1).active { background-color: #011D4D; }
+nav a:nth-child(2).active { background-color: #034078; }
+nav a:nth-child(3).active { background-color: #1282A2; }
+nav a:nth-child(4).active { background-color: #63372C; }
+
+/* Page-specific header background colors */
+body.page-home    header { background-color: #011D4D; }
+body.page-resume  header { background-color: #034078; }
+body.page-research header { background-color: #1282A2; }
+body.page-talks   header { background-color: #63372C; }
 
 
 /* Main */
@@ -399,8 +416,8 @@ main{
 }
 
 p, li{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
+    font-family: var(--font-body);
+    font-size: var(--font-size-body);
 }
 
 h1{
@@ -598,12 +615,42 @@ main, .experience, .education, .education_c, .experience_c, .heading{
 }
 
 .cv-button {
-  background-color: var(--color-navy-mid); /* Black for CV button */
+  background: linear-gradient(135deg, #034078 55%, #1282A2 55%);
   color: white;
   border-radius: 5px;
-  padding: 0 15px; /* Add horizontal padding only for the CV button */
+  padding: 0 18px;
   height: 40px;
   line-height: 40px;
+  position: relative;
+  overflow: hidden;
+  letter-spacing: 0.5px;
+  transition: filter 0.3s ease;
+}
+
+/* Animated shimmer sweep */
+.cv-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.25) 50%,
+    transparent 100%
+  );
+  transition: left 0.5s ease;
+}
+
+.cv-button:hover::before {
+  left: 120%;
+}
+
+.cv-button:hover {
+  filter: brightness(1.1);
+  opacity: 1;
 }
 
 /* Icon fonts */
@@ -687,16 +734,21 @@ a span{
 
 
 .footer {
-  color: var(--color-navy-deep); /* Dark text for readability */
+  color: var(--color-navy-deep);
   text-align: center;
   padding: 1rem;
-  font-size: 8px;
+  font-size: 11px !important;
+}
+
+.footer p {
+  font-size: 11px !important;
+  margin: 0;
 }
 
 .footer a {
-  color: var(--color-navy-mid); /* Blue link color */
+  color: var(--color-navy-mid);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 11px !important;
 }
 
 .footer a:hover {
@@ -754,7 +806,7 @@ a span{
   }
 
   .footer {
-    font-size: 0.5rem; /* Slightly smaller text on smaller screens */
+    font-size: 10px;
     padding: 0.8rem;
   }
 }
@@ -904,7 +956,7 @@ a span{
     }
 
   .footer {
-    font-size: 0.5rem; /* Slightly smaller text on smaller screens */
+    font-size: 10px;
     padding: 0.8rem;
   }
     
