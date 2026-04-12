@@ -783,6 +783,23 @@ a span{
     border-radius: 5px;
   }
 
+  /* --- Bio / heading responsive fix --- */
+  .heading {
+    width: 90%;
+    min-width: unset; /* Remove the 1024px min-width so it can shrink */
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading div:last-child {
+    width: 100%;
+    min-width: unset; /* Remove the 500px min-width */
+  }
+
+  .heading > div > h2 {
+    font-size: 32px; /* Smaller name on tablets / small screens */
+  }
+
   .updates {
         width: 90%; /* Match heading width */
         min-width: unset; /* Remove min-width constraint */
@@ -884,18 +901,28 @@ a span{
     .heading{
         flex-direction: column;
         padding-bottom: 10px;
+        min-width: unset; /* Override the 1024px min-width */
+        width: 95%;
     }
 
     .heading div:last-child{
-        width: 300px;
+        width: 100%;
+        min-width: unset; /* Override the 500px min-width */
         text-align: left;
     }
 
     .heading > div > h2 {
-        font-size: 52px !important;
+        font-size: 28px;
         font-weight: 700;
         color: var(--color-name-display);
         line-height: 1.1;
+    }
+
+    .photo, .newsphoto {
+        width: 250px;
+        height: 250px;
+        min-width: 250px;
+        min-height: 250px;
     }
 
 
