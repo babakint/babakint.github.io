@@ -1,1 +1,45 @@
+# Local editor settings
 .idea/
+.vscode/
+
+# macOS metadata
+.DS_Store
+._*
+
+# Private AI-assistant configuration, instructions, and session data
+.codex/
+.agents/
+.cursor/
+.claude/
+.chatgpt/
+.ai/
+
+# Local agent/Codex Markdown files (case-insensitive by explicit pattern)
+[Aa][Gg][Ee][Nn][Tt][Ss]*.[Mm][Dd]
+[Cc][Oo][Dd][Ee][Xx]*.[Mm][Dd]
+*.codex.*
+
+# Saved conversations, prompts, plans, and transcripts
+/private-notes/
+/conversations/
+/chats/
+/transcripts/
+/prompts/
+*.[Cc][Hh][Aa][Tt].*
+*.[Cc][Oo][Nn][Vv][Ee][Rr][Ss][Aa][Tt][Ii][Oo][Nn].*
+*.[Tt][Rr][Aa][Nn][Ss][Cc][Rr][Ii][Pp][Tt].*
+*.[Pp][Rr][Oo][Mm][Pp][Tt].*
+[Cc][Hh][Aa][Tt]-*.[Mm][Dd]
+[Cc][Oo][Nn][Vv][Ee][Rr][Ss][Aa][Tt][Ii][Oo][Nn]-*.[Mm][Dd]
+[Tt][Rr][Aa][Nn][Ss][Cc][Rr][Ii][Pp][Tt]-*.[Mm][Dd]
+[Pp][Rr][Oo][Mm][Pp][Tt]-*.[Mm][Dd]
+
+# Local environment values (allow a shareable example)
+.env
+.env.*
+!.env.example
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~

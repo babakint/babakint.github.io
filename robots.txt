@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://babakint.github.io/sitemap.xml

@@ -1,51 +1,56 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
-		rel="stylesheet">
-	<!-- <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&display=swap" rel="stylesheet"> -->
-	<link rel="stylesheet" href="assets/css/normalize.css">
-	<link rel="stylesheet" href="assets/css/styles.css">
-	<link rel="stylesheet" href="assets/css/project_style.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
-	<base target="_blank">
-	<title>Research – Babak Ehteshami Bejnordi</title>
-	<meta name="description"
-		content="Research publications and projects by Babak Ehteshami Bejnordi, covering efficient LLMs, on-device AI, mixture of experts, continual learning, and computer vision.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f8fa">
+  <title>Research — Babak Ehteshami Bejnordi</title>
+  <meta name="description" content="Research publications and projects by Babak Ehteshami Bejnordi, covering efficient LLMs, on-device AI, mixture-of-experts architectures, continual learning, and computer vision.">
+  <link rel="canonical" href="https://babakint.github.io/research.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Research — Babak Ehteshami Bejnordi">
+  <meta property="og:description" content="Research on efficient LLMs, mixture-of-experts architectures, on-device inference, and computer vision.">
+  <meta property="og:url" content="https://babakint.github.io/research.html">
+  <meta property="og:image" content="https://babakint.github.io/assets/images/Project/dpsl.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <script src="assets/scripts/script.js" defer></script>
 </head>
-
 <body>
-	<header>
-		<div>
-			<button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-			<h1>Babak Ehteshami Bejnordi</h1>
-			<p>Research Scientist @ Qualcomm AI Research</p>
-		</div>
-		<nav>
-			<a href="index.html" target="_self">Home</a>
-			<a href="resume.html" target="_self">Resume</a>
-			<a href="research.html" target="_self">Research</a>
-			<a href="talks.html" target="_self">Talks</a>
+	<a class="skip-link" href="#main-content">Skip to main content</a>
+	<header class="site-header">
+		<a class="site-identity" href="index.html">
+			<span class="site-name">Babak Ehteshami Bejnordi</span>
+			<span class="site-role">Principal Research Scientist · NVIDIA Nemotron</span>
+		</a>
+		<nav class="site-nav" aria-label="Primary navigation">
+			<a href="index.html">Home</a>
+			<a href="resume.html">Resume</a>
+			<a href="research.html" aria-current="page">Research</a>
+			<a href="talks.html">Talks</a>
 		</nav>
+		<button id="theme-toggle" type="button" aria-label="Switch to dark theme" aria-pressed="false">🌙</button>
 	</header>
-	<main>
+	<main id="main-content">
 		<div class="projects-section">
-			<h1>Research Projects</h1>
+			<div class="page-intro">
+				<p class="eyebrow">Selected publications</p>
+				<h1>Research projects</h1>
+				<p>Work on efficient and capable language models, conditional computation, on-device inference, multi-task learning, and computer vision.</p>
+			</div>
 			<div class="projects-container">
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/dpsl.png" alt="DPSL">
+						<img src="assets/images/Project/thumbs/dpsl.png" width="720" height="341" alt="Visualization of Dirichlet-Prior Shaping for expert specialization" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Dirichlet-Prior Shaping</h3>
-						<div class="conference-subtitle">Published @ICML'26</div>
+						<h2>Dirichlet-Prior Shaping</h2>
+						<div class="conference-subtitle">ICML 2026</div>
 						<p>Guiding expert specialization in MoEs via Dirichlet-Prior Shaping (DPSL). DPSL is a powerful
 							tool to instill a
 							wide array of desired statistical properties into the router's behavior.</p>
@@ -64,16 +69,16 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/reasoning.jpeg" alt="kava">
+						<img src="assets/images/Project/thumbs/reasoning.jpeg" width="720" height="319" alt="Efficient reasoning on edge devices project overview" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Reasoning on the Edge</h3>
-						<div class="conference-subtitle">Qualcomm AI Research | Tech Report'26</div>
+						<h2>Reasoning on the Edge</h2>
+						<div class="conference-subtitle">Qualcomm AI Research · Technical report 2026</div>
 						<p>Reasoning in small LLMs using LoRA adapters, combined with supervised fine-tuning and
 							RL-based Budget forcing.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">LoRA</span>
-							<span class="tech-tag">RL for budget forcing</span>
+							<span class="tech-tag">RL for Budget Forcing</span>
 							<span class="tech-tag">Chain-of-thought</span>
 							<span class="tech-tag">Model switching</span>
 							<span class="tech-tag">Reasoning</span>
@@ -88,11 +93,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/kava.png" alt="kava">
+						<img src="assets/images/Project/thumbs/kava.png" width="720" height="382" alt="KaVa compressed KV-cache distillation architecture" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>LATENT REASONING</h3>
-						<div class="conference-subtitle">Published @ICLR'26</div>
+						<h2>KaVa: Latent Reasoning</h2>
+						<div class="conference-subtitle">ICLR 2026</div>
 						<p>Distilling knowledge from a compressed KV-cache of a teacher into a latent-reasoning student.
 						</p>
 						<div class="tech-stack">
@@ -109,11 +114,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/moe_cache.png" alt="Cache-MoE">
+						<img src="assets/images/Project/thumbs/moe_cache.png" width="720" height="414" alt="Cache-MoE expert caching architecture for mobile inference" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Cache-MoE</h3>
-						<div class="conference-subtitle">Expo Demo @NeurIPS'24</div>
+						<h2>Cache-MoE</h2>
+						<div class="conference-subtitle">TMLR 2025 · NeurIPS 2024 demo</div>
 						<p>Efficient Mixture-of-Experts for mobile devices with limited DRAM via expert caching.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">MoE</span>
@@ -130,11 +135,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/readme_moe.png" alt="READ-ME">
+						<img src="assets/images/Project/thumbs/readme_moe.png" width="720" height="361" alt="READ-ME router-decoupled mixture-of-experts architecture" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Refactor LLM into MoE</h3>
-						<div class="conference-subtitle">Published @NeurIPS'24</div>
+						<h2>Refactor LLM into MoE</h2>
+						<div class="conference-subtitle">NeurIPS 2024</div>
 						<p>Refactorizing LLMs as router-decoupled mixture of experts with system co-design.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">MoE</span>
@@ -151,11 +156,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/llm2slm.png" alt="LLM-to-SLM">
+						<img src="assets/images/Project/thumbs/llm2slm.png" width="720" height="369" alt="LLM-to-SLM fast autoregressive decoding method" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>LLM-to-SLM</h3>
-						<div class="conference-subtitle">Published @ICML'24: ES-FoMo II</div>
+						<h2>LLM-to-SLM</h2>
+						<div class="conference-subtitle">ICML 2024 · ES-FoMo II workshop</div>
 						<p>Think Big, Generate Quick: LLM-to-SLM for fast autoregressive decoding.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Hybrid LLM</span>
@@ -171,11 +176,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/interrogate.png" alt="InterroGate for MTL">
+						<img src="assets/images/Project/thumbs/interrogate.png" width="720" height="398" alt="InterroGate representation sharing and specialization method" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>InterroGate for MTL</h3>
-						<div class="conference-subtitle">Published @BMVC'24</div>
+						<h2>InterroGate for MTL</h2>
+						<div class="conference-subtitle">BMVC 2024</div>
 						<p>Learning to share, specialize, and prune representations for Multi-task Learning.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Multi-task Learning</span>
@@ -191,11 +196,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/pbt.png" alt="pbt">
+						<img src="assets/images/Project/thumbs/pbt.png" width="720" height="410" alt="Scalarization method for multi-task and multi-domain learning" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Scalarization for MTL</h3>
-						<div class="conference-subtitle">Published @NeurIPS'23</div>
+						<h2>Scalarization for MTL</h2>
+						<div class="conference-subtitle">NeurIPS 2023</div>
 						<p>Scalarization for Multi-Task and Multi-Domain Learning at scale.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Population-based Training</span>
@@ -212,11 +217,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/msvit.png" alt="msvit">
+						<img src="assets/images/Project/thumbs/msvit.png" width="720" height="458" alt="MSViT dynamic mixed-scale tokenization examples" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>MSViT</h3>
-						<div class="conference-subtitle">Published @ICCV'23: NIVT</div>
+						<h2>MSViT</h2>
+						<div class="conference-subtitle">ICCV 2023 · NIVT workshop</div>
 						<p>Dynamic mixed-scale tokenization for vision transformers.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Conditional compute</span>
@@ -233,11 +238,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/salisa.png" alt="Salisa">
+						<img src="assets/images/Project/thumbs/salisa.png" width="720" height="479" alt="Salisa saliency-based sampling for video object detection" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Salisa</h3>
-						<div class="conference-subtitle">Published @ECCV'22</div>
+						<h2>Salisa</h2>
+						<div class="conference-subtitle">ECCV 2022</div>
 						<p>Saliency-based input sampling for efficient video object detection.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Efficient Inference</span>
@@ -254,11 +259,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/sgmoe.png" alt="Single-gated MoE">
+						<img src="assets/images/Project/thumbs/sgmoe.png" width="720" height="383" alt="Single-gated mixture-of-experts with early exits" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Single-gated MoE</h3>
-						<div class="conference-subtitle">Published @BMVC'22</div>
+						<h2>Single-gated MoE</h2>
+						<div class="conference-subtitle">BMVC 2022</div>
 						<p>Single-gate Mixture of Experts (MoE) with early exiting for convolutional architectures.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">MoE</span>
@@ -274,11 +279,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/frameexit.png" alt="FrameExit">
+						<img src="assets/images/Project/thumbs/frameexit.png" width="720" height="467" alt="FrameExit conditional early-exiting architecture" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>FrameExit</h3>
-						<div class="conference-subtitle">Published @CVPR'21 (Oral)</div>
+						<h2>FrameExit</h2>
+						<div class="conference-subtitle">CVPR 2021 · Oral</div>
 						<p>Conditional Early Exiting for Efficient Video Recognition.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Early Exiting</span>
@@ -295,11 +300,11 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/skipconv.png" alt="SkipConv">
+						<img src="assets/images/Project/thumbs/skipconv.png" width="720" height="370" alt="Skip-Convolutions for efficient video processing" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>SkipConv</h3>
-						<div class="conference-subtitle">Published @CVPR'21</div>
+						<h2>SkipConv</h2>
+						<div class="conference-subtitle">CVPR 2021</div>
 						<p>Skip-Convolutions for efficient video processing.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Residual Convolutions</span>
@@ -315,15 +320,15 @@
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/cl_gate.png" alt="Channel Gating for Continual Learning">
+						<img src="assets/images/Project/thumbs/cl_gate.png" width="720" height="496" alt="Conditional channel gating for continual learning" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Channel Gating for Continual Learning</h3>
-						<div class="conference-subtitle">Published @CVPR'20 (Oral)</div>
+						<h2>Channel Gating for Continual Learning</h2>
+						<div class="conference-subtitle">CVPR 2020 · Oral</div>
 						<p>Conditional channel gated networks for task-aware continual learning.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Continual Learning</span>
-							<span class="tech-tag">Chanel-Gating</span>
+							<span class="tech-tag">Channel Gating</span>
 							<span class="tech-tag">Task-aware</span>
 							<span class="tech-tag">Dynamic sparsity</span>
 						</div>
@@ -331,17 +336,17 @@
 							<a
 								href="https://openaccess.thecvf.com/content_CVPR_2020/papers/Abati_Conditional_Channel_Gated_Networks_for_Task-Aware_Continual_Learning_CVPR_2020_paper.pdf">Paper</a>
 							<a
-								href="https://www.youtube.com/watch?v=Qp2g-CzlxjQ&ab_channel=ComputerVisionFoundationVideos">Presentation</a>
+								href="https://www.youtube.com/watch?v=Qp2g-CzlxjQ&amp;ab_channel=ComputerVisionFoundationVideos">Presentation</a>
 						</div>
 					</div>
 				</div>
 				<div class="project-card">
 					<div class="project-image">
-						<img src="assets/images/Project/bas.png" alt="Batch-shaping for Channel Gating">
+						<img src="assets/images/Project/thumbs/bas.png" width="720" height="403" alt="Batch-Shaping for conditional channel-gated networks" loading="lazy" decoding="async">
 					</div>
 					<div class="project-content">
-						<h3>Channel Gating with Batch-shaping</h3>
-						<div class="conference-subtitle">Published @ICLR'20</div>
+						<h2>Channel Gating with Batch-shaping</h2>
+						<div class="conference-subtitle">ICLR 2020</div>
 						<p>Batch-shaping for learning conditional channel gated networks.</p>
 						<div class="tech-stack">
 							<span class="tech-tag">Batch-shaping</span>
@@ -354,20 +359,13 @@
 						</div>
 					</div>
 				</div>
-				<!-- Add more project-card divs following the same structure -->
 			</div>
 		</div>
 
 	</main>
 	<footer class="footer">
-		<p>© 2026 Babak Ehteshami Bejnordi | Website design adapted from
-			<a href="https://github.com/Maeevee/MyPortfolio" target="_blank" rel="noopener noreferrer">Maeevee</a>,
-			under MIT license.
-		</p>
+		<p>© 2026 Babak Ehteshami Bejnordi.</p>
 	</footer>
-
-	<!-- Link to the JavaScript file -->
-	<script src="assets/scripts/script.js"></script>
-</body>
+	</body>
 
 </html>
