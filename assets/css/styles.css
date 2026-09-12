@@ -66,6 +66,16 @@ html {
     scroll-behavior: smooth;
 }
 
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
 
 
 header {
@@ -111,16 +121,9 @@ nav a {
     transition: background-color 0.2s ease, color 0.2s ease;
 }
 
-/* Individual tab colors from Blue Jungle palette */
-nav a:nth-child(1) { background-color: rgba(1, 29, 77, 0.5); }    /* Home:     #011D4D */
-nav a:nth-child(2) { background-color: rgba(3, 64, 120, 0.5); }   /* Resume:   #034078 */
-nav a:nth-child(3) { background-color: rgba(18, 130, 162, 0.5); }  /* Research: #1282A2 */
-nav a:nth-child(4) { background-color: rgba(99, 55, 44, 0.5); }    /* Talks:    #63372C */
-
-nav a:nth-child(1):hover { background-color: #011D4D; }
-nav a:nth-child(2):hover { background-color: #034078; }
-nav a:nth-child(3):hover { background-color: #1282A2; }
-nav a:nth-child(4):hover { background-color: #63372C; }
+/* Shared navigation treatment keeps the four pages visually coherent. */
+nav a { background-color: transparent; }
+nav a:hover, nav a.active { background-color: rgba(255, 255, 255, 0.14); }
 
 nav a:not(:last-child) {
     border-right: none;
@@ -264,6 +267,57 @@ nav a.active {
     font-size: 26px; /* Match other section headings */
 }
 
+.company-link {
+    white-space: nowrap;
+}
+
+.company-logo {
+    width: 1.4em;
+    height: auto;
+    vertical-align: -0.12em;
+    margin-right: 0.15em;
+}
+
+.company-wordmark-qualcomm {
+    width: auto;
+    height: 1em;
+    vertical-align: -0.14em;
+}
+
+.company-link-nvidia {
+    color: #76b900;
+}
+
+.company-link-qualcomm {
+    color: #3253dc;
+}
+
+.company-link-radboud {
+    color: #222222;
+}
+
+body.dark-mode .company-link-radboud {
+    color: var(--color-cream);
+}
+
+.company-logo-radboud {
+    width: 1.25em;
+    height: 1.25em;
+    vertical-align: -0.25em;
+    filter: grayscale(1) contrast(3);
+}
+
+.company-link-harvard {
+    color: #a51c30;
+}
+
+.company-logo-harvard {
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: -0.33em;
+    margin-right: 0;
+}
+
 .updates ul {
     list-style-position: outside;
     padding-left: 50px;
@@ -393,17 +447,11 @@ nav a.active {
     text-decoration-thickness: 2px;
 }
 
-/* Active tab gets full-opacity background */
-nav a:nth-child(1).active { background-color: #011D4D; }
-nav a:nth-child(2).active { background-color: #034078; }
-nav a:nth-child(3).active { background-color: #1282A2; }
-nav a:nth-child(4).active { background-color: #63372C; }
-
-/* Page-specific header background colors */
-body.page-home    header { background-color: #011D4D; }
-body.page-resume  header { background-color: #034078; }
-body.page-research header { background-color: #1282A2; }
-body.page-talks   header { background-color: #63372C; }
+/* One shared header treatment across every page. */
+body.page-home header,
+body.page-resume header,
+body.page-research header,
+body.page-talks header { background-color: var(--color-navbar); }
 
 
 /* Main */

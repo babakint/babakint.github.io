@@ -1,1 +1,33 @@
+# Local editor settings
 .idea/
+.vscode/
+
+# macOS metadata
+.DS_Store
+._*
+
+# Local AI assistant configuration, instructions, and session artifacts
+.codex/
+.agents/
+AGENTS.md
+AGENTS.override.md
+AGENTS.local.md
+codex.md
+CODEX.md
+codex.local.md
+CODEX.local.md
+*.codex.*
+
+# Keep saved development discussions, plans, and transcripts in this folder.
+# Files saved elsewhere are not automatically private.
+/private-notes/
+
+# Local environment values (allow a shareable example)
+.env
+.env.*
+!.env.example
+
+# Editor swap and backup files
+*.swp
+*.swo
+*~
