@@ -387,13 +387,17 @@ main {
   display: flex;
   flex: 0 0 2.05rem;
   height: 2.55rem;
+  justify-content: flex-start;
+  overflow: hidden;
 }
 
 .career-logo-radboud-mark img {
-  filter: grayscale(1) contrast(4) invert(1);
-  height: 100%;
+  filter: brightness(0);
+  flex: 0 0 auto;
+  height: 2.7rem;
+  max-width: none;
   object-fit: contain;
-  width: 100%;
+  width: auto;
 }
 
 .career-logo-radboud-wordmark {
